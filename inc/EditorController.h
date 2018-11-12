@@ -42,27 +42,11 @@ class EditorController {
     }
 
     /**
-     * @brief Сохранение рисунка в файл в формате txt.
-     * @param file_name - имя файла.
-     */
-    void save_image_as_txt(const std::string& filename) {
-//      model_.save_image(std::make_shared<TxtExporter>(), filename);
-    }
-
-    /**
      * @brief Загрузка рисунка из файла.
      * @param file_name - имя файла.
      */
     void load_image_as_svg(const std::string& filename) {
       model_.load_image(std::make_shared<SvgImporter>(), filename);
-    }
-
-    /**
-     * @brief Загрузка рисунка из файла.
-     * @param file_name - имя файла.
-     */
-    void load_image_as_txt(const std::string& filename) {
-//      model_.load_image(std::make_shared<TxtImporter>() filename);
     }
 
     /**

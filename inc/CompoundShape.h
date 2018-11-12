@@ -109,7 +109,7 @@ public:
   }
 
   /**
-   * @brief Пометить фишуру как выделенную.
+   * @brief Пометить фигуру как выделенную.
    * @param is_selected - фигура выделена или нет.
    */
   void mark_as_selected(bool is_selected) override {
@@ -118,8 +118,8 @@ public:
   }
 
   /**
-   * @brief Дать характерные точки фигуры.
-   * @return характерные точки фигуры.
+   * @brief Дать координаты точек фигуры.
+   * @return координаты точки фигуры.
    */
   virtual CoordsChain get_coords_chain() const override {
     return CoordsChain{};
