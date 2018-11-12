@@ -11,9 +11,8 @@ namespace graphics {
 class Polyline : public IShape {
   public:
     /**
-     * @brief Конструктор отрезка.
-     * @param p1 - координаты начала.
-     * @param p2 - координатыконца.
+     * @brief Конструктор ломаной линии.
+     * @param points - координаты точек.
      * @param color - цвет.
      */
     explicit Polyline(const CoordsChain& points, Color color = BLACK) : points_{points}, color_(color) {

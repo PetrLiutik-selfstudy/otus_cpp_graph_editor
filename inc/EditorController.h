@@ -35,7 +35,7 @@ class EditorController {
 
     /**
      * @brief Сохранение рисунка в файл в формате SVG.
-     * @param file_name - имя файла.
+     * @param filename - имя файла.
      */
     void save_image_as_svg(const std::string& filename) {
       model_.save_image(std::make_shared<SvgExporter>(), filename);
@@ -43,7 +43,7 @@ class EditorController {
 
     /**
      * @brief Загрузка рисунка из файла.
-     * @param file_name - имя файла.
+     * @param filename - имя файла.
      */
     void load_image_as_svg(const std::string& filename) {
       model_.load_image(std::make_shared<SvgImporter>(), filename);

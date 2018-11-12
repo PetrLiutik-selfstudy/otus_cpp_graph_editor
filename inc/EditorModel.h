@@ -137,7 +137,7 @@ public:
 
   /**
    * @brief Изменить цвет выделенной фигуры.
-   * @param offset - смещение.
+   * @param color - цвет.
    */
   void change_shape_color(Color color) {
     selected_.set_color(color);

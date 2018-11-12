@@ -36,4 +36,4 @@ deploy:
     on:
       branch: master
     script:
-    - curl -T bulkmt-1.1.$TRAVIS_BUILD_NUMBER-Linux.deb -upetrljutik:$BINTRAY_API_KEY "https://api.bintray.com/content/petrljutik/graph_editor/graph_editor/$TRAVIS_BUILD_NUMBER/graph_editor-1.1.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
+    - curl -T graph_editor-1.1.$TRAVIS_BUILD_NUMBER-Linux.deb -upetrljutik:$BINTRAY_API_KEY "https://api.bintray.com/content/petrljutik/graph_editor/graph_editor/$TRAVIS_BUILD_NUMBER/graph_editor-1.1.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=trusty;deb_component=main;deb_architecture=amd64;publish=1"
