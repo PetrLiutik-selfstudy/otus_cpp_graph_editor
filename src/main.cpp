@@ -13,11 +13,9 @@ int main()
   graphics::EditorController editor;
 
   // Создание нового рисунка.
-  std::cout << "Create new image:" << std::endl;
   editor.create_new_image();
 
   // Добавление отрезка и ломаной.
-  std::cout << "\nAdd red line and blue polyline:";
   editor.choose_color(graphics::RED);
   editor.add_line({1, 2}, {7, 8});
   editor.choose_color(graphics::BLUE);

@@ -121,7 +121,16 @@ public:
    * @brief Дать характерные точки фигуры.
    * @return характерные точки фигуры.
    */
-  virtual CoordsChain get_coords_chain() const {
+  virtual CoordsChain get_coords_chain() const override {
+    return CoordsChain{};
+  }
+
+  /**
+   * @brief Содержатся-ли в составной фигуре другие фигуры.
+   * @return true - фигуры содержатся, false - фигуры не содержатся.
+   */
+  bool is_empty() {
+    return shapes_.empty();
   }
 
 private:

@@ -84,8 +84,9 @@ public:
   /**
    * @brief Выделить фигуру.
    * @param p - координата точки принадлежащей выделяемой фигуре.
+   * @return true - фигура была выделена, false - нет выделенных фигур.
    */
-  void select_shape(const Coords& p) {
+  bool select_shape(const Coords& p) {
     image_.push_from(selected_);
     selected_.push_from_if(image_, [&p](const CoordsChain& points) {
       for(const auto& it: points)
@@ -93,16 +94,22 @@ public:
           return true;
       return false;
     });
-    selected_.mark_as_selected(true);
-    redraw();
+
+    if(!selected_.is_empty()) {
+      selected_.mark_as_selected(true);
+      redraw();
+      return true;
+    }
+    return false;
   }
 
   /**
    * @brief Выделить фигуру(ы) в пределах указанного прямоугольника.
    * @param p1 - координаты нижней левой точки прямоугольника.
    * @param p2 - координаты верхней правой точки прямоугольника.
+   * @return true - фигура была выделена, false - нет выделенных фигур.
    */
-  void select_shape(const Coords& p1, const Coords& p2) {
+  bool select_shape(const Coords& p1, const Coords& p2) {
     image_.push_from(selected_);
     selected_.push_from_if(image_, [&p1, &p2](const CoordsChain& points) {
       for(const auto& it: points)
@@ -110,8 +117,13 @@ public:
           return true;
       return false;
     });
-    selected_.mark_as_selected(true);
-    redraw();
+
+    if(!selected_.is_empty()) {
+      selected_.mark_as_selected(true);
+      redraw();
+      return true;
+    }
+    return false;
   }
 
   /**

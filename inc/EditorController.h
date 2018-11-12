@@ -112,8 +112,8 @@ class EditorController {
      * @brief Выделить фигуру.
      * @param p - координата точки принадлежащей выделяемой фигуре.
      */
-    void select_shape(const Coords& p) {
-      model_.select_shape(p);
+    bool select_shape(const Coords& p) {
+      return model_.select_shape(p);
     }
 
     /**
@@ -122,7 +122,7 @@ class EditorController {
      * @param p2 - координата верхней правой точки прямоугольника.
      */
     bool select_shape(const Coords& p1, const Coords& p2) {
-      model_.select_shape(p1, p2);
+      return model_.select_shape(p1, p2);
     }
 
     /**

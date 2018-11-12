@@ -80,11 +80,11 @@ public:
 
 private:
 
-  static constexpr float sqrt0p5 = 0.7071;
+  static constexpr double sqrt0p5 = 0.7071;
 
   /// Сформировать цепочку точек окружности.
   void make_circle_points(const Coords& c, int r) {
-    int d = static_cast<int>(static_cast<float>(r) * sqrt0p5);
+    int d = static_cast<int>(static_cast<double>(r) * sqrt0p5);
     points_.push_back({c.get_x_coord() + r, c.get_y_coord()});
     points_.push_back({c.get_x_coord() + d, c.get_y_coord() + d});
     points_.push_back({c.get_x_coord(), c.get_y_coord() + r});
