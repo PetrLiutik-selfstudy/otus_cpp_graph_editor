@@ -1,0 +1,13 @@
+<map id="inc/EditorModel.h" name="inc/EditorModel.h">
+<area shape="rect" id="node2" href="$IShape_8h.html" title="IShape.h" alt="" coords="177,304,250,331"/>
+<area shape="rect" id="node7" href="$CompoundShape_8h.html" title="CompoundShape.h" alt="" coords="586,155,719,181"/>
+<area shape="rect" id="node10" href="$GraphicView_8h.html" title="GraphicView.h" alt="" coords="327,229,434,256"/>
+<area shape="rect" id="node13" href="$ShapeFactory_8h.html" title="ShapeFactory.h" alt="" coords="266,80,381,107"/>
+<area shape="rect" id="node18" href="$IImporter_8h.html" title="IImporter.h" alt="" coords="721,80,806,107"/>
+<area shape="rect" id="node19" href="$IExporter_8h.html" title="IExporter.h" alt="" coords="609,80,695,107"/>
+<area shape="rect" id="node3" href="$Coords_8h.html" title="Coords.h" alt="" coords="139,379,213,405"/>
+<area shape="rect" id="node14" href="$Line_8h.html" title="Line.h" alt="" coords="352,155,409,181"/>
+<area shape="rect" id="node15" href="$Polyline_8h.html" title="Polyline.h" alt="" coords="41,155,119,181"/>
+<area shape="rect" id="node16" href="$Rectangle_8h.html" title="Rectangle.h" alt="" coords="144,155,235,181"/>
+<area shape="rect" id="node17" href="$Circle_8h.html" title="Circle.h" alt="" coords="261,155,327,181"/>
+</map>

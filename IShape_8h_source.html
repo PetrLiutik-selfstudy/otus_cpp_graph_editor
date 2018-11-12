@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graph_editor: Исходный файл inc/IShape.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graph_editor
+   </div>
+   <div id="projectbrief">Otus homework 05</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">IShape.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="IShape_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Coords_8h.html">Coords.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>graphics {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>GraphicView;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">   12</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a105947507fb46df98d0a9a73b290d638">   13</a></span>&#160;  <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a105947507fb46df98d0a9a73b290d638">WHITE</a> = 0,</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897aa702befc65c0250065ea5961c2d38e0e">   14</a></span>&#160;  <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897aa702befc65c0250065ea5961c2d38e0e">RED</a>,</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a6691f3561e6c9ebdc19385e662b9b5ef">   15</a></span>&#160;  <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a6691f3561e6c9ebdc19385e662b9b5ef">GREEN</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a3761439984b0ca3eef1cbc26f0e7f87b">   16</a></span>&#160;  <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a3761439984b0ca3eef1cbc26f0e7f87b">BLUE</a>,</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897ac8aeb10ec54f50404ca6664c667b5c72">   17</a></span>&#160;  <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897ac8aeb10ec54f50404ca6664c667b5c72">BLACK</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">   21</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">ShapeType</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677ac5da379f30f9bee8856140e729494989">   22</a></span>&#160;  <a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677ac5da379f30f9bee8856140e729494989">LINE</a> = 0,</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677a03c0c787aa9b014f96175dd4406ba957">   23</a></span>&#160;  <a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677a03c0c787aa9b014f96175dd4406ba957">POLYLINE</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677aae36c0c37adb43a36af96a6aa76282bf">   24</a></span>&#160;  <a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677aae36c0c37adb43a36af96a6aa76282bf">RECTANGLE</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677aa4b292202b749ef6cad60ff3df6d77a8">   25</a></span>&#160;  <a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677aa4b292202b749ef6cad60ff3df6d77a8">CIRCLE</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677a2372039622bb55d8f2c68095549633b8">   26</a></span>&#160;  <a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677a2372039622bb55d8f2c68095549633b8">COMPOUND</a> = 255</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classgraphics_1_1IShape.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgraphics_1_1IShape.html">IShape</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classgraphics_1_1IShape.html#a2d080c76f0493e4251b949a8e7bb897b">~IShape</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">ShapeType</a> <a class="code" href="classgraphics_1_1IShape.html#a521410b4a055381d63da209fffccbe31">get_type</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> <a class="code" href="classgraphics_1_1IShape.html#a81d0babdbc753bce0142454804cc8a10">get_color</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1IShape.html#ad6b1b46823ac262f03527cec7f902ef1">set_color</a>(<a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> color) = 0;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1IShape.html#a49185fb6a1fafda35a065c10cb9eb7e4">move</a>(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; offset) = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1IShape.html#a6e219c0bffd727e60f4db49c586906bc">redraw</a>(<a class="code" href="classgraphics_1_1GraphicView.html">GraphicView</a>&amp; view) = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1IShape.html#a0848355e3e8381d58570701761837d58">mark_as_selected</a>(<span class="keywordtype">bool</span> is_selected) = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">CoordsChain</a> <a class="code" href="classgraphics_1_1IShape.html#a030e41eabf5ea80ba45eb9dc4856387a">get_coords_chain</a>() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;} <span class="comment">// namespace graphics.</span></div>
+<div class="ttc" id="classgraphics_1_1IShape_html_a0848355e3e8381d58570701761837d58"><div class="ttname"><a href="classgraphics_1_1IShape.html#a0848355e3e8381d58570701761837d58">graphics::IShape::mark_as_selected</a></div><div class="ttdeci">virtual void mark_as_selected(bool is_selected)=0</div><div class="ttdoc">Пометить фигуру как выделенную. </div></div>
+<div class="ttc" id="namespacegraphics_html_a60a0dffbd081c853deaba4bb6653c897"><div class="ttname"><a href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">graphics::Color</a></div><div class="ttdeci">Color</div><div class="ttdoc">Цвет фигуры. </div><div class="ttdef"><b>Definition:</b> IShape.h:12</div></div>
+<div class="ttc" id="namespacegraphics_html_adff3f9bbb4c72f8c245f38c39f650b1d"><div class="ttname"><a href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">graphics::CoordsChain</a></div><div class="ttdeci">std::vector&lt; Coords &gt; CoordsChain</div><div class="ttdoc">Тип цепочки координат нескольких точек. </div><div class="ttdef"><b>Definition:</b> Coords.h:97</div></div>
+<div class="ttc" id="classgraphics_1_1IShape_html_a49185fb6a1fafda35a065c10cb9eb7e4"><div class="ttname"><a href="classgraphics_1_1IShape.html#a49185fb6a1fafda35a065c10cb9eb7e4">graphics::IShape::move</a></div><div class="ttdeci">virtual void move(const Coords &amp;offset)=0</div><div class="ttdoc">Переместить фигуру. </div></div>
+<div class="ttc" id="classgraphics_1_1GraphicView_html"><div class="ttname"><a href="classgraphics_1_1GraphicView.html">graphics::GraphicView</a></div><div class="ttdoc">Класс представления графического редактора. </div><div class="ttdef"><b>Definition:</b> GraphicView.h:13</div></div>
+<div class="ttc" id="namespacegraphics_html_a60a0dffbd081c853deaba4bb6653c897a6691f3561e6c9ebdc19385e662b9b5ef"><div class="ttname"><a href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a6691f3561e6c9ebdc19385e662b9b5ef">graphics::GREEN</a></div><div class="ttdef"><b>Definition:</b> IShape.h:15</div></div>
+<div class="ttc" id="namespacegraphics_html_a9743daea70117b796550e7ca42e84677a2372039622bb55d8f2c68095549633b8"><div class="ttname"><a href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677a2372039622bb55d8f2c68095549633b8">graphics::COMPOUND</a></div><div class="ttdef"><b>Definition:</b> IShape.h:26</div></div>
+<div class="ttc" id="classgraphics_1_1IShape_html_a6e219c0bffd727e60f4db49c586906bc"><div class="ttname"><a href="classgraphics_1_1IShape.html#a6e219c0bffd727e60f4db49c586906bc">graphics::IShape::redraw</a></div><div class="ttdeci">virtual void redraw(GraphicView &amp;view)=0</div><div class="ttdoc">Перерисовать фигуру в представлении. </div></div>
+<div class="ttc" id="namespacegraphics_html_a9743daea70117b796550e7ca42e84677a03c0c787aa9b014f96175dd4406ba957"><div class="ttname"><a href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677a03c0c787aa9b014f96175dd4406ba957">graphics::POLYLINE</a></div><div class="ttdef"><b>Definition:</b> IShape.h:23</div></div>
+<div class="ttc" id="namespacegraphics_html_a9743daea70117b796550e7ca42e84677aae36c0c37adb43a36af96a6aa76282bf"><div class="ttname"><a href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677aae36c0c37adb43a36af96a6aa76282bf">graphics::RECTANGLE</a></div><div class="ttdef"><b>Definition:</b> IShape.h:24</div></div>
+<div class="ttc" id="classgraphics_1_1IShape_html"><div class="ttname"><a href="classgraphics_1_1IShape.html">graphics::IShape</a></div><div class="ttdoc">Интерфейс графической фигуры. </div><div class="ttdef"><b>Definition:</b> IShape.h:32</div></div>
+<div class="ttc" id="classgraphics_1_1IShape_html_a030e41eabf5ea80ba45eb9dc4856387a"><div class="ttname"><a href="classgraphics_1_1IShape.html#a030e41eabf5ea80ba45eb9dc4856387a">graphics::IShape::get_coords_chain</a></div><div class="ttdeci">virtual CoordsChain get_coords_chain() const =0</div><div class="ttdoc">Дать координаты точек фигуры. </div></div>
+<div class="ttc" id="classgraphics_1_1IShape_html_a2d080c76f0493e4251b949a8e7bb897b"><div class="ttname"><a href="classgraphics_1_1IShape.html#a2d080c76f0493e4251b949a8e7bb897b">graphics::IShape::~IShape</a></div><div class="ttdeci">virtual ~IShape()=default</div></div>
+<div class="ttc" id="namespacegraphics_html_a60a0dffbd081c853deaba4bb6653c897a3761439984b0ca3eef1cbc26f0e7f87b"><div class="ttname"><a href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a3761439984b0ca3eef1cbc26f0e7f87b">graphics::BLUE</a></div><div class="ttdef"><b>Definition:</b> IShape.h:16</div></div>
+<div class="ttc" id="classgraphics_1_1IShape_html_a521410b4a055381d63da209fffccbe31"><div class="ttname"><a href="classgraphics_1_1IShape.html#a521410b4a055381d63da209fffccbe31">graphics::IShape::get_type</a></div><div class="ttdeci">virtual ShapeType get_type() const =0</div><div class="ttdoc">Дать тип фигуры. </div></div>
+<div class="ttc" id="namespacegraphics_html_a60a0dffbd081c853deaba4bb6653c897aa702befc65c0250065ea5961c2d38e0e"><div class="ttname"><a href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897aa702befc65c0250065ea5961c2d38e0e">graphics::RED</a></div><div class="ttdef"><b>Definition:</b> IShape.h:14</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html"><div class="ttname"><a href="classgraphics_1_1Coords.html">graphics::Coords</a></div><div class="ttdoc">Класс описывающий координаты точки в 2D пространстве. </div><div class="ttdef"><b>Definition:</b> Coords.h:12</div></div>
+<div class="ttc" id="namespacegraphics_html_a60a0dffbd081c853deaba4bb6653c897ac8aeb10ec54f50404ca6664c667b5c72"><div class="ttname"><a href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897ac8aeb10ec54f50404ca6664c667b5c72">graphics::BLACK</a></div><div class="ttdef"><b>Definition:</b> IShape.h:17</div></div>
+<div class="ttc" id="classgraphics_1_1IShape_html_ad6b1b46823ac262f03527cec7f902ef1"><div class="ttname"><a href="classgraphics_1_1IShape.html#ad6b1b46823ac262f03527cec7f902ef1">graphics::IShape::set_color</a></div><div class="ttdeci">virtual void set_color(Color color)=0</div><div class="ttdoc">Установить цвет фигуры. </div></div>
+<div class="ttc" id="classgraphics_1_1IShape_html_a81d0babdbc753bce0142454804cc8a10"><div class="ttname"><a href="classgraphics_1_1IShape.html#a81d0babdbc753bce0142454804cc8a10">graphics::IShape::get_color</a></div><div class="ttdeci">virtual Color get_color() const =0</div><div class="ttdoc">Дать цвет фигуры. </div></div>
+<div class="ttc" id="namespacegraphics_html_a9743daea70117b796550e7ca42e84677aa4b292202b749ef6cad60ff3df6d77a8"><div class="ttname"><a href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677aa4b292202b749ef6cad60ff3df6d77a8">graphics::CIRCLE</a></div><div class="ttdef"><b>Definition:</b> IShape.h:25</div></div>
+<div class="ttc" id="Coords_8h_html"><div class="ttname"><a href="Coords_8h.html">Coords.h</a></div></div>
+<div class="ttc" id="namespacegraphics_html_a60a0dffbd081c853deaba4bb6653c897a105947507fb46df98d0a9a73b290d638"><div class="ttname"><a href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a105947507fb46df98d0a9a73b290d638">graphics::WHITE</a></div><div class="ttdef"><b>Definition:</b> IShape.h:13</div></div>
+<div class="ttc" id="namespacegraphics_html_a9743daea70117b796550e7ca42e84677ac5da379f30f9bee8856140e729494989"><div class="ttname"><a href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677ac5da379f30f9bee8856140e729494989">graphics::LINE</a></div><div class="ttdef"><b>Definition:</b> IShape.h:22</div></div>
+<div class="ttc" id="namespacegraphics_html_a9743daea70117b796550e7ca42e84677"><div class="ttname"><a href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">graphics::ShapeType</a></div><div class="ttdeci">ShapeType</div><div class="ttdoc">Тип фигуры. </div><div class="ttdef"><b>Definition:</b> IShape.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

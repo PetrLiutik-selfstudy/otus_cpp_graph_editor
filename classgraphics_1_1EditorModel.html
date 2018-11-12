@@ -1,0 +1,609 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graph_editor: Класс graphics::EditorModel</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graph_editor
+   </div>
+   <div id="projectbrief">Otus homework 05</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacegraphics.html">graphics</a></li><li class="navelem"><a class="el" href="classgraphics_1_1EditorModel.html">EditorModel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classgraphics_1_1EditorModel-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс graphics::EditorModel</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс модели графического редактора.  
+ <a href="classgraphics_1_1EditorModel.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="EditorModel_8h_source.html">EditorModel.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a5c9102f1ea292946b8879aaad17e3c7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#a5c9102f1ea292946b8879aaad17e3c7f">EditorModel</a> ()=default</td></tr>
+<tr class="separator:a5c9102f1ea292946b8879aaad17e3c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ddf941b020edb5ddc765e5d29399aa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#a5ddf941b020edb5ddc765e5d29399aa7">~EditorModel</a> ()=default</td></tr>
+<tr class="separator:a5ddf941b020edb5ddc765e5d29399aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcaf51aea7db56db070861a89bf7bdff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#abcaf51aea7db56db070861a89bf7bdff">create_new_image</a> ()</td></tr>
+<tr class="memdesc:abcaf51aea7db56db070861a89bf7bdff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать новое изображение.  <a href="#abcaf51aea7db56db070861a89bf7bdff">Подробнее...</a><br/></td></tr>
+<tr class="separator:abcaf51aea7db56db070861a89bf7bdff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6251d5b267960beebbcf3e9bb3de14b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#a6251d5b267960beebbcf3e9bb3de14b0">clear_image</a> ()</td></tr>
+<tr class="memdesc:a6251d5b267960beebbcf3e9bb3de14b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить изображение.  <a href="#a6251d5b267960beebbcf3e9bb3de14b0">Подробнее...</a><br/></td></tr>
+<tr class="separator:a6251d5b267960beebbcf3e9bb3de14b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b962b117dd8bd48f9a01eeefa7942f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#a22b962b117dd8bd48f9a01eeefa7942f">create_shape</a> (<a class="el" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">ShapeType</a> type, const <a class="el" href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">CoordsChain</a> &amp;points)</td></tr>
+<tr class="memdesc:a22b962b117dd8bd48f9a01eeefa7942f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание новой фигуры.  <a href="#a22b962b117dd8bd48f9a01eeefa7942f">Подробнее...</a><br/></td></tr>
+<tr class="separator:a22b962b117dd8bd48f9a01eeefa7942f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6138d7dae6b85796af7c8c418f47459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#aa6138d7dae6b85796af7c8c418f47459">load_image</a> (std::shared_ptr&lt; <a class="el" href="classgraphics_1_1IImporter.html">IImporter</a> &gt; importer, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:aa6138d7dae6b85796af7c8c418f47459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузить изображение из файла.  <a href="#aa6138d7dae6b85796af7c8c418f47459">Подробнее...</a><br/></td></tr>
+<tr class="separator:aa6138d7dae6b85796af7c8c418f47459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad33fde5d3397c871064830b71180fb72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#ad33fde5d3397c871064830b71180fb72">save_image</a> (std::shared_ptr&lt; <a class="el" href="classgraphics_1_1IExporter.html">IExporter</a> &gt; exporter, const std::string &amp;filename)</td></tr>
+<tr class="memdesc:ad33fde5d3397c871064830b71180fb72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохранить изображение в файл.  <a href="#ad33fde5d3397c871064830b71180fb72">Подробнее...</a><br/></td></tr>
+<tr class="separator:ad33fde5d3397c871064830b71180fb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96038ee60ba8ef24c979fee7e0ba1263"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#a96038ee60ba8ef24c979fee7e0ba1263">choose_color</a> (<a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> color)</td></tr>
+<tr class="memdesc:a96038ee60ba8ef24c979fee7e0ba1263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выбор цвета рисования фигур.  <a href="#a96038ee60ba8ef24c979fee7e0ba1263">Подробнее...</a><br/></td></tr>
+<tr class="separator:a96038ee60ba8ef24c979fee7e0ba1263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5aa52c0bf00cb31abcddaff0ba80bb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#af5aa52c0bf00cb31abcddaff0ba80bb2">select_shape</a> (const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;p)</td></tr>
+<tr class="memdesc:af5aa52c0bf00cb31abcddaff0ba80bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выделить фигуру.  <a href="#af5aa52c0bf00cb31abcddaff0ba80bb2">Подробнее...</a><br/></td></tr>
+<tr class="separator:af5aa52c0bf00cb31abcddaff0ba80bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdfffe1cb8b4bea4d8f317fbcbef54fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#afdfffe1cb8b4bea4d8f317fbcbef54fc">select_shape</a> (const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;p1, const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;p2)</td></tr>
+<tr class="memdesc:afdfffe1cb8b4bea4d8f317fbcbef54fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выделить фигуру(ы) в пределах указанного прямоугольника.  <a href="#afdfffe1cb8b4bea4d8f317fbcbef54fc">Подробнее...</a><br/></td></tr>
+<tr class="separator:afdfffe1cb8b4bea4d8f317fbcbef54fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8e1b0bea8dcb076bd29f4c9585413a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#a4e8e1b0bea8dcb076bd29f4c9585413a">deselect_shape</a> ()</td></tr>
+<tr class="memdesc:a4e8e1b0bea8dcb076bd29f4c9585413a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отменить выделение фигуры.  <a href="#a4e8e1b0bea8dcb076bd29f4c9585413a">Подробнее...</a><br/></td></tr>
+<tr class="separator:a4e8e1b0bea8dcb076bd29f4c9585413a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf2dc2e1a6294e3a2420c376e762876"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#aedf2dc2e1a6294e3a2420c376e762876">change_shape_color</a> (<a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> color)</td></tr>
+<tr class="memdesc:aedf2dc2e1a6294e3a2420c376e762876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить цвет выделенной фигуры.  <a href="#aedf2dc2e1a6294e3a2420c376e762876">Подробнее...</a><br/></td></tr>
+<tr class="separator:aedf2dc2e1a6294e3a2420c376e762876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a025e769380518d2a9b881a8be38c715e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#a025e769380518d2a9b881a8be38c715e">move_shape</a> (const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;offset)</td></tr>
+<tr class="memdesc:a025e769380518d2a9b881a8be38c715e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Передвинуть выделенную фигуру(ы).  <a href="#a025e769380518d2a9b881a8be38c715e">Подробнее...</a><br/></td></tr>
+<tr class="separator:a025e769380518d2a9b881a8be38c715e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08f7ac013a9757408160f276f2b0397a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1EditorModel.html#a08f7ac013a9757408160f276f2b0397a">remove_shape</a> ()</td></tr>
+<tr class="memdesc:a08f7ac013a9757408160f276f2b0397a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить выбраную фигуру(ы).  <a href="#a08f7ac013a9757408160f276f2b0397a">Подробнее...</a><br/></td></tr>
+<tr class="separator:a08f7ac013a9757408160f276f2b0397a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс модели графического редактора. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a5c9102f1ea292946b8879aaad17e3c7f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">graphics::EditorModel::EditorModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ddf941b020edb5ddc765e5d29399aa7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">graphics::EditorModel::~EditorModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="aedf2dc2e1a6294e3a2420c376e762876"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphics::EditorModel::change_shape_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a>&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Изменить цвет выделенной фигуры. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>- смещение. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a96038ee60ba8ef24c979fee7e0ba1263"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphics::EditorModel::choose_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a>&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выбор цвета рисования фигур. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>- цвет. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6251d5b267960beebbcf3e9bb3de14b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphics::EditorModel::clear_image </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Очистить изображение. </p>
+
+</div>
+</div>
+<a class="anchor" id="abcaf51aea7db56db070861a89bf7bdff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphics::EditorModel::create_new_image </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать новое изображение. </p>
+
+</div>
+</div>
+<a class="anchor" id="a22b962b117dd8bd48f9a01eeefa7942f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphics::EditorModel::create_shape </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">ShapeType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">CoordsChain</a> &amp;&#160;</td>
+          <td class="paramname"><em>points</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создание новой фигуры. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>- тип фигуры. </td></tr>
+    <tr><td class="paramname">points</td><td>- координаты точек, необходимых для построения фигуры. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4e8e1b0bea8dcb076bd29f4c9585413a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphics::EditorModel::deselect_shape </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отменить выделение фигуры. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa6138d7dae6b85796af7c8c418f47459"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphics::EditorModel::load_image </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classgraphics_1_1IImporter.html">IImporter</a> &gt;&#160;</td>
+          <td class="paramname"><em>importer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Загрузить изображение из файла. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">importer</td><td>- импортер изображения. </td></tr>
+    <tr><td class="paramname">filename</td><td>- имя файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a025e769380518d2a9b881a8be38c715e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphics::EditorModel::move_shape </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Передвинуть выделенную фигуру(ы). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>- смещение. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a08f7ac013a9757408160f276f2b0397a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphics::EditorModel::remove_shape </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удалить выбраную фигуру(ы). </p>
+
+</div>
+</div>
+<a class="anchor" id="ad33fde5d3397c871064830b71180fb72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void graphics::EditorModel::save_image </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classgraphics_1_1IExporter.html">IExporter</a> &gt;&#160;</td>
+          <td class="paramname"><em>exporter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сохранить изображение в файл. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">exporter</td><td>- экспортер изображения. </td></tr>
+    <tr><td class="paramname">filename</td><td>- имя файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af5aa52c0bf00cb31abcddaff0ba80bb2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool graphics::EditorModel::select_shape </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выделить фигуру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>- координата точки принадлежащей выделяемой фигуре. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - фигура была выделена, false - нет выделенных фигур. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afdfffe1cb8b4bea4d8f317fbcbef54fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool graphics::EditorModel::select_shape </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выделить фигуру(ы) в пределах указанного прямоугольника. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>- координаты нижней левой точки прямоугольника. </td></tr>
+    <tr><td class="paramname">p2</td><td>- координаты верхней правой точки прямоугольника. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - фигура была выделена, false - нет выделенных фигур. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>inc/<a class="el" href="EditorModel_8h_source.html">EditorModel.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

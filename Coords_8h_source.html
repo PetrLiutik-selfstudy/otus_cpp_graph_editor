@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graph_editor: Исходный файл inc/Coords.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graph_editor
+   </div>
+   <div id="projectbrief">Otus homework 05</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Coords.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Coords_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;ostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>graphics {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classgraphics_1_1Coords.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgraphics_1_1Coords.html">Coords</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classgraphics_1_1Coords.html#ae3de01a5c18f90a8a0a4d19ef7da08b1">   19</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classgraphics_1_1Coords.html#ae3de01a5c18f90a8a0a4d19ef7da08b1">Coords</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) : x_{x}, y_{y} {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classgraphics_1_1Coords.html#aa32f8ed8479e78607645e6423ea5cad8">   26</a></span>&#160;    <a class="code" href="classgraphics_1_1Coords.html#aa32f8ed8479e78607645e6423ea5cad8">Coords</a>(std::initializer_list&lt;int&gt; coords) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      <span class="keyword">auto</span> it = coords.begin();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      x_ = *it++;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      y_ = *it;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classgraphics_1_1Coords.html#ae3de01a5c18f90a8a0a4d19ef7da08b1">Coords</a>(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; <a class="code" href="classgraphics_1_1Coords.html#a38511c4189c71d047254228667e91708">operator = </a>(<a class="code" href="classgraphics_1_1Coords.html">Coords</a> <span class="keyword">const</span>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; <a class="code" href="classgraphics_1_1Coords.html#a38511c4189c71d047254228667e91708">operator = </a>(<a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp;&amp;) noexcept = default;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ~<a class="code" href="classgraphics_1_1Coords.html">Coords</a>() = default;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classgraphics_1_1Coords.html#a772de6fccf666543ec4a128189b4fc9e">   43</a></span>&#160;    <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; operator += (const <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; offset) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      x_ += offset.x_;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      y_ += offset.y_;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classgraphics_1_1Coords.html#a1c892fc0edd21d1e9842a4656135d174">   54</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgraphics_1_1Coords.html#a1c892fc0edd21d1e9842a4656135d174">operator == </a>(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> (x_ == other.x_) &amp;&amp; (y_ == other.y_);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classgraphics_1_1Coords.html#a97f7758496515f245ef5053d2b202d55">   64</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classgraphics_1_1Coords.html#a97f7758496515f245ef5053d2b202d55">belongs_to_rect</a>(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; p1, <span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; p2)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">return</span> (p1.x_ &lt;= x_) &amp;&amp; (p2.x_ &gt;= x_) &amp;&amp; (p1.y_ &lt;= y_) &amp;&amp; (p2.y_ &gt;= y_);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">int</span> <a class="code" href="classgraphics_1_1Coords.html#a1e9f24df101d2fcafef6e56e89bd016a">get_distance</a>(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; p1, <span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; p2);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">   76</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">get_x_coord</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">return</span> x_;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">   80</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">get_y_coord</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span> y_;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> x_;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> y_;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="namespacegraphics.html#acbed15e998d566f0fd1a37dd1691fe78">   91</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="namespacegraphics.html#acbed15e998d566f0fd1a37dd1691fe78">get_distance</a>(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; p1, <span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; p2) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">auto</span> dist = sqrt((p1.x_ - p2.x_) * (p1.x_ - p2.x_) + (p1.y_ - p2.y_) * (p1.y_ - p2.y_));</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">return</span> static_cast &lt;<span class="keywordtype">int</span>&gt;(dist);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">   97</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">CoordsChain</a> = std::vector&lt;Coords&gt;;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;} <span class="comment">// namespace graphics.</span></div>
+<div class="ttc" id="classgraphics_1_1Coords_html_aa32f8ed8479e78607645e6423ea5cad8"><div class="ttname"><a href="classgraphics_1_1Coords.html#aa32f8ed8479e78607645e6423ea5cad8">graphics::Coords::Coords</a></div><div class="ttdeci">Coords(std::initializer_list&lt; int &gt; coords)</div><div class="ttdoc">Конструктор со списком инициализации. </div><div class="ttdef"><b>Definition:</b> Coords.h:26</div></div>
+<div class="ttc" id="namespacegraphics_html_adff3f9bbb4c72f8c245f38c39f650b1d"><div class="ttname"><a href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">graphics::CoordsChain</a></div><div class="ttdeci">std::vector&lt; Coords &gt; CoordsChain</div><div class="ttdoc">Тип цепочки координат нескольких точек. </div><div class="ttdef"><b>Definition:</b> Coords.h:97</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html_ae3de01a5c18f90a8a0a4d19ef7da08b1"><div class="ttname"><a href="classgraphics_1_1Coords.html#ae3de01a5c18f90a8a0a4d19ef7da08b1">graphics::Coords::Coords</a></div><div class="ttdeci">Coords(int x, int y)</div><div class="ttdoc">Конструктор. </div><div class="ttdef"><b>Definition:</b> Coords.h:19</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html_a506c4f87ee00a507dfbdbdea5585396f"><div class="ttname"><a href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">graphics::Coords::get_x_coord</a></div><div class="ttdeci">int get_x_coord() const </div><div class="ttdef"><b>Definition:</b> Coords.h:76</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html_a1c892fc0edd21d1e9842a4656135d174"><div class="ttname"><a href="classgraphics_1_1Coords.html#a1c892fc0edd21d1e9842a4656135d174">graphics::Coords::operator==</a></div><div class="ttdeci">bool operator==(const Coords &amp;other) const </div><div class="ttdoc">Оператор равенства. </div><div class="ttdef"><b>Definition:</b> Coords.h:54</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html_a1e9f24df101d2fcafef6e56e89bd016a"><div class="ttname"><a href="classgraphics_1_1Coords.html#a1e9f24df101d2fcafef6e56e89bd016a">graphics::Coords::get_distance</a></div><div class="ttdeci">friend int get_distance(const Coords &amp;p1, const Coords &amp;p2)</div><div class="ttdoc">Дать расстояние между двумя точками. </div><div class="ttdef"><b>Definition:</b> Coords.h:91</div></div>
+<div class="ttc" id="namespacegraphics_html_acbed15e998d566f0fd1a37dd1691fe78"><div class="ttname"><a href="namespacegraphics.html#acbed15e998d566f0fd1a37dd1691fe78">graphics::get_distance</a></div><div class="ttdeci">int get_distance(const Coords &amp;p1, const Coords &amp;p2)</div><div class="ttdef"><b>Definition:</b> Coords.h:91</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html_a9df3e32ad8c6f6fa426214e40ad2a6be"><div class="ttname"><a href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">graphics::Coords::get_y_coord</a></div><div class="ttdeci">int get_y_coord() const </div><div class="ttdef"><b>Definition:</b> Coords.h:80</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html"><div class="ttname"><a href="classgraphics_1_1Coords.html">graphics::Coords</a></div><div class="ttdoc">Класс описывающий координаты точки в 2D пространстве. </div><div class="ttdef"><b>Definition:</b> Coords.h:12</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html_a38511c4189c71d047254228667e91708"><div class="ttname"><a href="classgraphics_1_1Coords.html#a38511c4189c71d047254228667e91708">graphics::Coords::operator=</a></div><div class="ttdeci">Coords &amp; operator=(Coords const &amp;)=default</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html_a97f7758496515f245ef5053d2b202d55"><div class="ttname"><a href="classgraphics_1_1Coords.html#a97f7758496515f245ef5053d2b202d55">graphics::Coords::belongs_to_rect</a></div><div class="ttdeci">bool belongs_to_rect(const Coords &amp;p1, const Coords &amp;p2) const </div><div class="ttdoc">Проверка принадлежности точки с координатами прямоугольнику. </div><div class="ttdef"><b>Definition:</b> Coords.h:64</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

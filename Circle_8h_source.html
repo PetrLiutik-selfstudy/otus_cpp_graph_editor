@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graph_editor: Исходный файл inc/Circle.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graph_editor
+   </div>
+   <div id="projectbrief">Otus homework 05</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Circle.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Circle_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IShape_8h.html">IShape.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="GraphicView_8h.html">GraphicView.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespacegraphics.html">    6</a></span>&#160;<span class="keyword">namespace </span>graphics {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classgraphics_1_1Circle.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgraphics_1_1Circle.html">Circle</a> : <span class="keyword">public</span> <a class="code" href="classgraphics_1_1IShape.html">IShape</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classgraphics_1_1Circle.html#a8fede8d25b241ed58223f24625acfc5f">   19</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classgraphics_1_1Circle.html#a8fede8d25b241ed58223f24625acfc5f">Circle</a>(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; c, <span class="keywordtype">int</span> r, <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> color = <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897ac8aeb10ec54f50404ca6664c667b5c72">BLACK</a>) : color_(color) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    make_circle_points(c, r);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="classgraphics_1_1Circle.html#a9820389f787ae173909476f90df5a807">~Circle</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classgraphics_1_1Circle.html#ac2313823a4bfbb5ee8dcd751811f2616">   29</a></span>&#160;  <a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">ShapeType</a> <a class="code" href="classgraphics_1_1Circle.html#ac2313823a4bfbb5ee8dcd751811f2616">get_type</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677aa4b292202b749ef6cad60ff3df6d77a8">CIRCLE</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classgraphics_1_1Circle.html#ad0aa03d488b81b2059141fea5ae88a07">   37</a></span>&#160;  <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> <a class="code" href="classgraphics_1_1Circle.html#ad0aa03d488b81b2059141fea5ae88a07">get_color</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> color_;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classgraphics_1_1Circle.html#a42bcbd7ee70511f88d62e23133b07978">   45</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1Circle.html#a42bcbd7ee70511f88d62e23133b07978">set_color</a>(<a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> color)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    color_ = color;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classgraphics_1_1Circle.html#a535a2acc595966144ffac58388d65933">   53</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1Circle.html#a535a2acc595966144ffac58388d65933">move</a>(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; offset)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; it: points_)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      it += offset;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classgraphics_1_1Circle.html#a1f2402ab66938cefb26ecc5e69f86de5">   61</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1Circle.html#a1f2402ab66938cefb26ecc5e69f86de5">redraw</a>(<a class="code" href="classgraphics_1_1GraphicView.html">GraphicView</a>&amp; view)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    view.<a class="code" href="classgraphics_1_1GraphicView.html#ae9fb6efda57a5860320e570a4d1a1d6e">draw</a>(<a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677aa4b292202b749ef6cad60ff3df6d77a8">CIRCLE</a>, color_, points_, is_selected_);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classgraphics_1_1Circle.html#a7febaaf4c2544227cbb0928bdfd6d025">   69</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1Circle.html#a7febaaf4c2544227cbb0928bdfd6d025">mark_as_selected</a>(<span class="keywordtype">bool</span> is_selected)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    is_selected_ = is_selected;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classgraphics_1_1Circle.html#a368d814040a0a90aa5be2797e4baa041">   77</a></span>&#160;  <a class="code" href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">CoordsChain</a> <a class="code" href="classgraphics_1_1Circle.html#a368d814040a0a90aa5be2797e4baa041">get_coords_chain</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> points_;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> sqrt0p5 = 0.7071;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> make_circle_points(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; c, <span class="keywordtype">int</span> r) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">int</span> d = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(r) * sqrt0p5);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    points_.push_back({c.<a class="code" href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">get_x_coord</a>() + r, c.<a class="code" href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">get_y_coord</a>()});</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    points_.push_back({c.<a class="code" href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">get_x_coord</a>() + d, c.<a class="code" href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">get_y_coord</a>() + d});</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    points_.push_back({c.<a class="code" href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">get_x_coord</a>(), c.<a class="code" href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">get_y_coord</a>() + r});</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    points_.push_back({c.<a class="code" href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">get_x_coord</a>() - d, c.<a class="code" href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">get_y_coord</a>() + d});</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    points_.push_back({c.<a class="code" href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">get_x_coord</a>() - r, c.<a class="code" href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">get_y_coord</a>()});</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    points_.push_back({c.<a class="code" href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">get_x_coord</a>() - d, c.<a class="code" href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">get_y_coord</a>() - d});</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    points_.push_back({c.<a class="code" href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">get_x_coord</a>(), c.<a class="code" href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">get_y_coord</a>() - r});</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    points_.push_back({c.<a class="code" href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">get_x_coord</a>() + d, c.<a class="code" href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">get_y_coord</a>() - d});</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">CoordsChain</a> points_{};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> color_{};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">bool</span> is_selected_{};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;} <span class="comment">// namespace graphics.</span></div>
+<div class="ttc" id="namespacegraphics_html_a60a0dffbd081c853deaba4bb6653c897"><div class="ttname"><a href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">graphics::Color</a></div><div class="ttdeci">Color</div><div class="ttdoc">Цвет фигуры. </div><div class="ttdef"><b>Definition:</b> IShape.h:12</div></div>
+<div class="ttc" id="namespacegraphics_html_adff3f9bbb4c72f8c245f38c39f650b1d"><div class="ttname"><a href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">graphics::CoordsChain</a></div><div class="ttdeci">std::vector&lt; Coords &gt; CoordsChain</div><div class="ttdoc">Тип цепочки координат нескольких точек. </div><div class="ttdef"><b>Definition:</b> Coords.h:97</div></div>
+<div class="ttc" id="classgraphics_1_1GraphicView_html"><div class="ttname"><a href="classgraphics_1_1GraphicView.html">graphics::GraphicView</a></div><div class="ttdoc">Класс представления графического редактора. </div><div class="ttdef"><b>Definition:</b> GraphicView.h:13</div></div>
+<div class="ttc" id="classgraphics_1_1Circle_html_a8fede8d25b241ed58223f24625acfc5f"><div class="ttname"><a href="classgraphics_1_1Circle.html#a8fede8d25b241ed58223f24625acfc5f">graphics::Circle::Circle</a></div><div class="ttdeci">Circle(const Coords &amp;c, int r, Color color=BLACK)</div><div class="ttdoc">Конструктор отрезка. </div><div class="ttdef"><b>Definition:</b> Circle.h:19</div></div>
+<div class="ttc" id="classgraphics_1_1Circle_html_ad0aa03d488b81b2059141fea5ae88a07"><div class="ttname"><a href="classgraphics_1_1Circle.html#ad0aa03d488b81b2059141fea5ae88a07">graphics::Circle::get_color</a></div><div class="ttdeci">Color get_color() const override</div><div class="ttdoc">Дать цвет фигуры. </div><div class="ttdef"><b>Definition:</b> Circle.h:37</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html_a506c4f87ee00a507dfbdbdea5585396f"><div class="ttname"><a href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">graphics::Coords::get_x_coord</a></div><div class="ttdeci">int get_x_coord() const </div><div class="ttdef"><b>Definition:</b> Coords.h:76</div></div>
+<div class="ttc" id="classgraphics_1_1Circle_html_a368d814040a0a90aa5be2797e4baa041"><div class="ttname"><a href="classgraphics_1_1Circle.html#a368d814040a0a90aa5be2797e4baa041">graphics::Circle::get_coords_chain</a></div><div class="ttdeci">CoordsChain get_coords_chain() const override</div><div class="ttdoc">Дать координаты точек фигуры. </div><div class="ttdef"><b>Definition:</b> Circle.h:77</div></div>
+<div class="ttc" id="classgraphics_1_1Circle_html_a9820389f787ae173909476f90df5a807"><div class="ttname"><a href="classgraphics_1_1Circle.html#a9820389f787ae173909476f90df5a807">graphics::Circle::~Circle</a></div><div class="ttdeci">~Circle() override=default</div></div>
+<div class="ttc" id="classgraphics_1_1Circle_html_a42bcbd7ee70511f88d62e23133b07978"><div class="ttname"><a href="classgraphics_1_1Circle.html#a42bcbd7ee70511f88d62e23133b07978">graphics::Circle::set_color</a></div><div class="ttdeci">void set_color(Color color) override</div><div class="ttdoc">Дать цвет фигуры. </div><div class="ttdef"><b>Definition:</b> Circle.h:45</div></div>
+<div class="ttc" id="classgraphics_1_1IShape_html"><div class="ttname"><a href="classgraphics_1_1IShape.html">graphics::IShape</a></div><div class="ttdoc">Интерфейс графической фигуры. </div><div class="ttdef"><b>Definition:</b> IShape.h:32</div></div>
+<div class="ttc" id="classgraphics_1_1Circle_html_a7febaaf4c2544227cbb0928bdfd6d025"><div class="ttname"><a href="classgraphics_1_1Circle.html#a7febaaf4c2544227cbb0928bdfd6d025">graphics::Circle::mark_as_selected</a></div><div class="ttdeci">void mark_as_selected(bool is_selected) override</div><div class="ttdoc">Пометить фигуру как выделенную. </div><div class="ttdef"><b>Definition:</b> Circle.h:69</div></div>
+<div class="ttc" id="classgraphics_1_1GraphicView_html_ae9fb6efda57a5860320e570a4d1a1d6e"><div class="ttname"><a href="classgraphics_1_1GraphicView.html#ae9fb6efda57a5860320e570a4d1a1d6e">graphics::GraphicView::draw</a></div><div class="ttdeci">void draw(ShapeType type, Color color, const CoordsChain &amp;points, bool is_selected)</div><div class="ttdoc">Рисование фигуры. </div><div class="ttdef"><b>Definition:</b> GraphicView.h:33</div></div>
+<div class="ttc" id="classgraphics_1_1Circle_html_a1f2402ab66938cefb26ecc5e69f86de5"><div class="ttname"><a href="classgraphics_1_1Circle.html#a1f2402ab66938cefb26ecc5e69f86de5">graphics::Circle::redraw</a></div><div class="ttdeci">void redraw(GraphicView &amp;view) override</div><div class="ttdoc">Перерисовать фигуру в представлении. </div><div class="ttdef"><b>Definition:</b> Circle.h:61</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html_a9df3e32ad8c6f6fa426214e40ad2a6be"><div class="ttname"><a href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">graphics::Coords::get_y_coord</a></div><div class="ttdeci">int get_y_coord() const </div><div class="ttdef"><b>Definition:</b> Coords.h:80</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html"><div class="ttname"><a href="classgraphics_1_1Coords.html">graphics::Coords</a></div><div class="ttdoc">Класс описывающий координаты точки в 2D пространстве. </div><div class="ttdef"><b>Definition:</b> Coords.h:12</div></div>
+<div class="ttc" id="GraphicView_8h_html"><div class="ttname"><a href="GraphicView_8h.html">GraphicView.h</a></div></div>
+<div class="ttc" id="namespacegraphics_html_a60a0dffbd081c853deaba4bb6653c897ac8aeb10ec54f50404ca6664c667b5c72"><div class="ttname"><a href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897ac8aeb10ec54f50404ca6664c667b5c72">graphics::BLACK</a></div><div class="ttdef"><b>Definition:</b> IShape.h:17</div></div>
+<div class="ttc" id="namespacegraphics_html_a9743daea70117b796550e7ca42e84677aa4b292202b749ef6cad60ff3df6d77a8"><div class="ttname"><a href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677aa4b292202b749ef6cad60ff3df6d77a8">graphics::CIRCLE</a></div><div class="ttdef"><b>Definition:</b> IShape.h:25</div></div>
+<div class="ttc" id="classgraphics_1_1Circle_html_a535a2acc595966144ffac58388d65933"><div class="ttname"><a href="classgraphics_1_1Circle.html#a535a2acc595966144ffac58388d65933">graphics::Circle::move</a></div><div class="ttdeci">void move(const Coords &amp;offset) override</div><div class="ttdoc">Переместить фигуру. </div><div class="ttdef"><b>Definition:</b> Circle.h:53</div></div>
+<div class="ttc" id="classgraphics_1_1Circle_html"><div class="ttname"><a href="classgraphics_1_1Circle.html">graphics::Circle</a></div><div class="ttdoc">Класс окружности. </div><div class="ttdef"><b>Definition:</b> Circle.h:11</div></div>
+<div class="ttc" id="namespacegraphics_html_a9743daea70117b796550e7ca42e84677"><div class="ttname"><a href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">graphics::ShapeType</a></div><div class="ttdeci">ShapeType</div><div class="ttdoc">Тип фигуры. </div><div class="ttdef"><b>Definition:</b> IShape.h:21</div></div>
+<div class="ttc" id="classgraphics_1_1Circle_html_ac2313823a4bfbb5ee8dcd751811f2616"><div class="ttname"><a href="classgraphics_1_1Circle.html#ac2313823a4bfbb5ee8dcd751811f2616">graphics::Circle::get_type</a></div><div class="ttdeci">ShapeType get_type() const override</div><div class="ttdoc">Дать тип фигуры. </div><div class="ttdef"><b>Definition:</b> Circle.h:29</div></div>
+<div class="ttc" id="IShape_8h_html"><div class="ttname"><a href="IShape_8h.html">IShape.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

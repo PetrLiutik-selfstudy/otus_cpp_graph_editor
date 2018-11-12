@@ -1,0 +1,10 @@
+<map id="inc/CompoundShape.h" name="inc/CompoundShape.h">
+<area shape="rect" id="node2" href="$EditorModel_8h.html" title="inc/EditorModel.h" alt="" coords="28,155,151,181"/>
+<area shape="rect" id="node5" href="$ShapeFactory_8h.html" title="inc/ShapeFactory.h" alt="" coords="23,80,157,107"/>
+<area shape="rect" id="node6" href="$IImporter_8h.html" title="inc/IImporter.h" alt="" coords="183,80,289,107"/>
+<area shape="rect" id="node8" href="$IExporter_8h.html" title="inc/IExporter.h" alt="" coords="313,80,420,107"/>
+<area shape="rect" id="node3" href="$EditorController_8h.html" title="inc/EditorController.h" alt="" coords="165,229,309,256"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="189,304,285,331"/>
+<area shape="rect" id="node7" href="$SvgImporter_8h.html" title="inc/SvgImporter.h" alt="" coords="175,155,300,181"/>
+<area shape="rect" id="node9" href="$SvgExporter_8h.html" title="inc/SvgExporter.h" alt="" coords="325,155,451,181"/>
+</map>

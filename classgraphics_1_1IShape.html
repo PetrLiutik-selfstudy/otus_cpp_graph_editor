@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graph_editor: Класс graphics::IShape</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graph_editor
+   </div>
+   <div id="projectbrief">Otus homework 05</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacegraphics.html">graphics</a></li><li class="navelem"><a class="el" href="classgraphics_1_1IShape.html">IShape</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classgraphics_1_1IShape-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс graphics::IShape<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Интерфейс графической фигуры.  
+ <a href="classgraphics_1_1IShape.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="IShape_8h_source.html">IShape.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:graphics::IShape:</div>
+<div class="dyncontent">
+<div class="center"><img src="classgraphics_1_1IShape__inherit__graph.png" border="0" usemap="#graphics_1_1IShape_inherit__map" alt="Inheritance graph"/></div>
+<map name="graphics_1_1IShape_inherit__map" id="graphics_1_1IShape_inherit__map">
+<area shape="rect" id="node2" href="classgraphics_1_1Circle.html" title="Класс окружности. " alt="" coords="206,5,319,32"/><area shape="rect" id="node3" href="classgraphics_1_1CompoundShape.html" title="Класс составной фигуры. " alt="" coords="173,56,352,83"/><area shape="rect" id="node4" href="classgraphics_1_1Line.html" title="Класс отрезка. " alt="" coords="211,107,314,133"/><area shape="rect" id="node5" href="classgraphics_1_1Polyline.html" title="Класс ломаной линии. " alt="" coords="200,157,325,184"/><area shape="rect" id="node6" href="classgraphics_1_1Rectangle.html" title="Класс прямоугольника. " alt="" coords="193,208,332,235"/></map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a2d080c76f0493e4251b949a8e7bb897b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1IShape.html#a2d080c76f0493e4251b949a8e7bb897b">~IShape</a> ()=default</td></tr>
+<tr class="separator:a2d080c76f0493e4251b949a8e7bb897b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521410b4a055381d63da209fffccbe31"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">ShapeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1IShape.html#a521410b4a055381d63da209fffccbe31">get_type</a> () const =0</td></tr>
+<tr class="memdesc:a521410b4a055381d63da209fffccbe31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать тип фигуры.  <a href="#a521410b4a055381d63da209fffccbe31">Подробнее...</a><br/></td></tr>
+<tr class="separator:a521410b4a055381d63da209fffccbe31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d0babdbc753bce0142454804cc8a10"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1IShape.html#a81d0babdbc753bce0142454804cc8a10">get_color</a> () const =0</td></tr>
+<tr class="memdesc:a81d0babdbc753bce0142454804cc8a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать цвет фигуры.  <a href="#a81d0babdbc753bce0142454804cc8a10">Подробнее...</a><br/></td></tr>
+<tr class="separator:a81d0babdbc753bce0142454804cc8a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6b1b46823ac262f03527cec7f902ef1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1IShape.html#ad6b1b46823ac262f03527cec7f902ef1">set_color</a> (<a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> color)=0</td></tr>
+<tr class="memdesc:ad6b1b46823ac262f03527cec7f902ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установить цвет фигуры.  <a href="#ad6b1b46823ac262f03527cec7f902ef1">Подробнее...</a><br/></td></tr>
+<tr class="separator:ad6b1b46823ac262f03527cec7f902ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49185fb6a1fafda35a065c10cb9eb7e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1IShape.html#a49185fb6a1fafda35a065c10cb9eb7e4">move</a> (const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;offset)=0</td></tr>
+<tr class="memdesc:a49185fb6a1fafda35a065c10cb9eb7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переместить фигуру.  <a href="#a49185fb6a1fafda35a065c10cb9eb7e4">Подробнее...</a><br/></td></tr>
+<tr class="separator:a49185fb6a1fafda35a065c10cb9eb7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e219c0bffd727e60f4db49c586906bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1IShape.html#a6e219c0bffd727e60f4db49c586906bc">redraw</a> (<a class="el" href="classgraphics_1_1GraphicView.html">GraphicView</a> &amp;view)=0</td></tr>
+<tr class="memdesc:a6e219c0bffd727e60f4db49c586906bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перерисовать фигуру в представлении.  <a href="#a6e219c0bffd727e60f4db49c586906bc">Подробнее...</a><br/></td></tr>
+<tr class="separator:a6e219c0bffd727e60f4db49c586906bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0848355e3e8381d58570701761837d58"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1IShape.html#a0848355e3e8381d58570701761837d58">mark_as_selected</a> (bool is_selected)=0</td></tr>
+<tr class="memdesc:a0848355e3e8381d58570701761837d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Пометить фигуру как выделенную.  <a href="#a0848355e3e8381d58570701761837d58">Подробнее...</a><br/></td></tr>
+<tr class="separator:a0848355e3e8381d58570701761837d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a030e41eabf5ea80ba45eb9dc4856387a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">CoordsChain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1IShape.html#a030e41eabf5ea80ba45eb9dc4856387a">get_coords_chain</a> () const =0</td></tr>
+<tr class="memdesc:a030e41eabf5ea80ba45eb9dc4856387a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать координаты точек фигуры.  <a href="#a030e41eabf5ea80ba45eb9dc4856387a">Подробнее...</a><br/></td></tr>
+<tr class="separator:a030e41eabf5ea80ba45eb9dc4856387a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Интерфейс графической фигуры. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a2d080c76f0493e4251b949a8e7bb897b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual graphics::IShape::~IShape </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a81d0babdbc753bce0142454804cc8a10"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> graphics::IShape::get_color </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дать цвет фигуры. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>цвет фигуры. </dd></dl>
+
+<p>Замещается в <a class="el" href="classgraphics_1_1CompoundShape.html#a97ce42266876fff97b5c51094d8d061f">graphics::CompoundShape</a>, <a class="el" href="classgraphics_1_1Rectangle.html#aa00800369cf72ceea53dd65c59afd822">graphics::Rectangle</a>, <a class="el" href="classgraphics_1_1Line.html#aefed339e1e0c26ee1bcb4c7f29f70547">graphics::Line</a>, <a class="el" href="classgraphics_1_1Circle.html#ad0aa03d488b81b2059141fea5ae88a07">graphics::Circle</a> и <a class="el" href="classgraphics_1_1Polyline.html#ad4941e3eebb58e0e8bb31df0e9e36215">graphics::Polyline</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a030e41eabf5ea80ba45eb9dc4856387a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">CoordsChain</a> graphics::IShape::get_coords_chain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дать координаты точек фигуры. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>координаты точки фигуры. </dd></dl>
+
+<p>Замещается в <a class="el" href="classgraphics_1_1CompoundShape.html#a09219f556740887b977c583a84c7a443">graphics::CompoundShape</a>, <a class="el" href="classgraphics_1_1Rectangle.html#afd6571e016a86df5fb598ed8b129b6ac">graphics::Rectangle</a>, <a class="el" href="classgraphics_1_1Line.html#ac013c84bf0e83069093cc753d8c96e57">graphics::Line</a>, <a class="el" href="classgraphics_1_1Circle.html#a368d814040a0a90aa5be2797e4baa041">graphics::Circle</a> и <a class="el" href="classgraphics_1_1Polyline.html#a241021cc6447427bf6da583a491a869d">graphics::Polyline</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a521410b4a055381d63da209fffccbe31"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">ShapeType</a> graphics::IShape::get_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дать тип фигуры. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>тип фигуры. </dd></dl>
+
+<p>Замещается в <a class="el" href="classgraphics_1_1CompoundShape.html#a06a7db816f6cc6d2f8e93a666234f83d">graphics::CompoundShape</a>, <a class="el" href="classgraphics_1_1Rectangle.html#abe892099e9cf37e64f1c51b5943b2a77">graphics::Rectangle</a>, <a class="el" href="classgraphics_1_1Line.html#a9c3d2c7aa7839d145b876c82df64954b">graphics::Line</a>, <a class="el" href="classgraphics_1_1Circle.html#ac2313823a4bfbb5ee8dcd751811f2616">graphics::Circle</a> и <a class="el" href="classgraphics_1_1Polyline.html#a939c247e1e79525c7e71e081a4c160df">graphics::Polyline</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0848355e3e8381d58570701761837d58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void graphics::IShape::mark_as_selected </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_selected</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Пометить фигуру как выделенную. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_selected</td><td>- фигура выделена или нет. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="classgraphics_1_1CompoundShape.html#a40459707b183c5677604975405fe9229">graphics::CompoundShape</a>, <a class="el" href="classgraphics_1_1Rectangle.html#a07d24d557d090237ca8c7cecbacaea91">graphics::Rectangle</a>, <a class="el" href="classgraphics_1_1Line.html#a3c94111834d9c00613ea4f2a70841ae9">graphics::Line</a>, <a class="el" href="classgraphics_1_1Circle.html#a7febaaf4c2544227cbb0928bdfd6d025">graphics::Circle</a> и <a class="el" href="classgraphics_1_1Polyline.html#a456d9c9ceddf3b94bf7240d328d990d5">graphics::Polyline</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a49185fb6a1fafda35a065c10cb9eb7e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void graphics::IShape::move </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Переместить фигуру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>- смещение, на которое необходимо сдвинуть фигуру. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="classgraphics_1_1CompoundShape.html#ae5e201fa3a3960cfacd3d18a47d4f90e">graphics::CompoundShape</a>, <a class="el" href="classgraphics_1_1Rectangle.html#a67dd23d959f1e84ac350083f0e5c1f9c">graphics::Rectangle</a>, <a class="el" href="classgraphics_1_1Line.html#a7bc9f1305e2a9eac1d204d50965378b5">graphics::Line</a>, <a class="el" href="classgraphics_1_1Circle.html#a535a2acc595966144ffac58388d65933">graphics::Circle</a> и <a class="el" href="classgraphics_1_1Polyline.html#afb9dc356d019def53f2579376db5f2c3">graphics::Polyline</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e219c0bffd727e60f4db49c586906bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void graphics::IShape::redraw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgraphics_1_1GraphicView.html">GraphicView</a> &amp;&#160;</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перерисовать фигуру в представлении. </p>
+
+<p>Замещается в <a class="el" href="classgraphics_1_1CompoundShape.html#a96312906bffe04ae84a3a0d0832267f6">graphics::CompoundShape</a>, <a class="el" href="classgraphics_1_1Rectangle.html#a472c60f5702d779f973e3d5c50088acb">graphics::Rectangle</a>, <a class="el" href="classgraphics_1_1Line.html#a351ece2bb10071d0c2becdca8769ccb6">graphics::Line</a>, <a class="el" href="classgraphics_1_1Circle.html#a1f2402ab66938cefb26ecc5e69f86de5">graphics::Circle</a> и <a class="el" href="classgraphics_1_1Polyline.html#acb8b121651d24301bf76ed2b3211915a">graphics::Polyline</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6b1b46823ac262f03527cec7f902ef1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void graphics::IShape::set_color </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a>&#160;</td>
+          <td class="paramname"><em>color</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Установить цвет фигуры. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>- цвет фигуры. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="classgraphics_1_1CompoundShape.html#aba3e99e38b14b852dda0d72cc4a3fcba">graphics::CompoundShape</a>, <a class="el" href="classgraphics_1_1Rectangle.html#a70f0cd65e4cf6565adacb99418b00564">graphics::Rectangle</a>, <a class="el" href="classgraphics_1_1Line.html#aee4d014ab5bb29053de2f7908330cc00">graphics::Line</a>, <a class="el" href="classgraphics_1_1Circle.html#a42bcbd7ee70511f88d62e23133b07978">graphics::Circle</a> и <a class="el" href="classgraphics_1_1Polyline.html#a472aad2dd448cb96dd35b76e5486aa1d">graphics::Polyline</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>inc/<a class="el" href="IShape_8h_source.html">IShape.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

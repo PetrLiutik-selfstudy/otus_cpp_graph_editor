@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graph_editor: Класс graphics::Coords</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graph_editor
+   </div>
+   <div id="projectbrief">Otus homework 05</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacegraphics.html">graphics</a></li><li class="navelem"><a class="el" href="classgraphics_1_1Coords.html">Coords</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="classgraphics_1_1Coords-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс graphics::Coords</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс описывающий координаты точки в 2D пространстве.  
+ <a href="classgraphics_1_1Coords.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Coords_8h_source.html">Coords.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ae3de01a5c18f90a8a0a4d19ef7da08b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#ae3de01a5c18f90a8a0a4d19ef7da08b1">Coords</a> (int x, int y)</td></tr>
+<tr class="memdesc:ae3de01a5c18f90a8a0a4d19ef7da08b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="#ae3de01a5c18f90a8a0a4d19ef7da08b1">Подробнее...</a><br/></td></tr>
+<tr class="separator:ae3de01a5c18f90a8a0a4d19ef7da08b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32f8ed8479e78607645e6423ea5cad8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#aa32f8ed8479e78607645e6423ea5cad8">Coords</a> (std::initializer_list&lt; int &gt; coords)</td></tr>
+<tr class="memdesc:aa32f8ed8479e78607645e6423ea5cad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор со списком инициализации.  <a href="#aa32f8ed8479e78607645e6423ea5cad8">Подробнее...</a><br/></td></tr>
+<tr class="separator:aa32f8ed8479e78607645e6423ea5cad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9816a828d47867daa4cff448ae87ba79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#a9816a828d47867daa4cff448ae87ba79">Coords</a> (const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;)=default</td></tr>
+<tr class="separator:a9816a828d47867daa4cff448ae87ba79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38511c4189c71d047254228667e91708"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#a38511c4189c71d047254228667e91708">operator=</a> (<a class="el" href="classgraphics_1_1Coords.html">Coords</a> const &amp;)=default</td></tr>
+<tr class="separator:a38511c4189c71d047254228667e91708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ff14462c7c74ba77b24bdbab23d4633"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#a4ff14462c7c74ba77b24bdbab23d4633">operator=</a> (<a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&amp;) noexcept=default</td></tr>
+<tr class="separator:a4ff14462c7c74ba77b24bdbab23d4633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc4ad2616a0e4b930dd3631ea4415d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#a2dc4ad2616a0e4b930dd3631ea4415d0">~Coords</a> ()=default</td></tr>
+<tr class="separator:a2dc4ad2616a0e4b930dd3631ea4415d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772de6fccf666543ec4a128189b4fc9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#a772de6fccf666543ec4a128189b4fc9e">operator+=</a> (const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;offset)</td></tr>
+<tr class="memdesc:a772de6fccf666543ec4a128189b4fc9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор += (изменение координат на указанное смещение).  <a href="#a772de6fccf666543ec4a128189b4fc9e">Подробнее...</a><br/></td></tr>
+<tr class="separator:a772de6fccf666543ec4a128189b4fc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c892fc0edd21d1e9842a4656135d174"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#a1c892fc0edd21d1e9842a4656135d174">operator==</a> (const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;other) const </td></tr>
+<tr class="memdesc:a1c892fc0edd21d1e9842a4656135d174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор равенства.  <a href="#a1c892fc0edd21d1e9842a4656135d174">Подробнее...</a><br/></td></tr>
+<tr class="separator:a1c892fc0edd21d1e9842a4656135d174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f7758496515f245ef5053d2b202d55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#a97f7758496515f245ef5053d2b202d55">belongs_to_rect</a> (const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;p1, const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;p2) const </td></tr>
+<tr class="memdesc:a97f7758496515f245ef5053d2b202d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка принадлежности точки с координатами прямоугольнику.  <a href="#a97f7758496515f245ef5053d2b202d55">Подробнее...</a><br/></td></tr>
+<tr class="separator:a97f7758496515f245ef5053d2b202d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506c4f87ee00a507dfbdbdea5585396f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f">get_x_coord</a> () const </td></tr>
+<tr class="separator:a506c4f87ee00a507dfbdbdea5585396f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df3e32ad8c6f6fa426214e40ad2a6be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be">get_y_coord</a> () const </td></tr>
+<tr class="separator:a9df3e32ad8c6f6fa426214e40ad2a6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a1e9f24df101d2fcafef6e56e89bd016a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1Coords.html#a1e9f24df101d2fcafef6e56e89bd016a">get_distance</a> (const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;p1, const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;p2)</td></tr>
+<tr class="memdesc:a1e9f24df101d2fcafef6e56e89bd016a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дать расстояние между двумя точками.  <a href="#a1e9f24df101d2fcafef6e56e89bd016a">Подробнее...</a><br/></td></tr>
+<tr class="separator:a1e9f24df101d2fcafef6e56e89bd016a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс описывающий координаты точки в 2D пространстве. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="ae3de01a5c18f90a8a0a4d19ef7da08b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">graphics::Coords::Coords </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>- координата x. </td></tr>
+    <tr><td class="paramname">y</td><td>- координата y. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa32f8ed8479e78607645e6423ea5cad8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">graphics::Coords::Coords </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>coords</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор со списком инициализации. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>- координаты. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9816a828d47867daa4cff448ae87ba79"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">graphics::Coords::Coords </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2dc4ad2616a0e4b930dd3631ea4415d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">graphics::Coords::~Coords </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a97f7758496515f245ef5053d2b202d55"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool graphics::Coords::belongs_to_rect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверка принадлежности точки с координатами прямоугольнику. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>- координаты нижней левой точки прямоугольника. </td></tr>
+    <tr><td class="paramname">p2</td><td>- координаты верхней правой точки прямоугольника. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - точка принадлежит прямоугольнику, false - не принадлежит. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a506c4f87ee00a507dfbdbdea5585396f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int graphics::Coords::get_x_coord </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9df3e32ad8c6f6fa426214e40ad2a6be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int graphics::Coords::get_y_coord </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a772de6fccf666543ec4a128189b4fc9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgraphics_1_1Coords.html">Coords</a>&amp; graphics::Coords::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оператор += (изменение координат на указанное смещение). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset</td><td>- смещение. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>ссылка на себя. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a38511c4189c71d047254228667e91708"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgraphics_1_1Coords.html">Coords</a>&amp; graphics::Coords::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgraphics_1_1Coords.html">Coords</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ff14462c7c74ba77b24bdbab23d4633"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgraphics_1_1Coords.html">Coords</a>&amp; graphics::Coords::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1c892fc0edd21d1e9842a4656135d174"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool graphics::Coords::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оператор равенства. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>- координаты другой точки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true - координаты совпадают, false - не совпадают. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, отноносящимся к классу</h2>
+<a class="anchor" id="a1e9f24df101d2fcafef6e56e89bd016a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_distance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classgraphics_1_1Coords.html">Coords</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Дать расстояние между двумя точками. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p1</td><td>- координаты первой точки. </td></tr>
+    <tr><td class="paramname">p2</td><td>- координаты второй точки. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>расстояние между точками. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>inc/<a class="el" href="Coords_8h_source.html">Coords.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

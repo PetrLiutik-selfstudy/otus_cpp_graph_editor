@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graph_editor: Файл inc/IShape.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graph_editor
+   </div>
+   <div id="projectbrief">Otus homework 05</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#enum-members">Перечисления</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл IShape.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="Coords_8h_source.html">Coords.h</a>&quot;</code><br/>
+<code>#include &lt;vector&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для IShape.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="IShape_8h__incl.png" border="0" usemap="#inc_2IShape_8h" alt=""/></div>
+<map name="inc_2IShape_8h" id="inc_2IShape_8h">
+<area shape="rect" id="node2" href="Coords_8h.html" title="Coords.h" alt="" coords="92,80,165,107"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="IShape_8h__dep__incl.png" border="0" usemap="#inc_2IShape_8hdep" alt=""/></div>
+<map name="inc_2IShape_8hdep" id="inc_2IShape_8hdep">
+<area shape="rect" id="node2" href="Circle_8h.html" title="inc/Circle.h" alt="" coords="561,155,649,181"/><area shape="rect" id="node3" href="ShapeFactory_8h.html" title="inc/ShapeFactory.h" alt="" coords="213,229,347,256"/><area shape="rect" id="node4" href="EditorModel_8h.html" title="inc/EditorModel.h" alt="" coords="324,304,447,331"/><area shape="rect" id="node5" href="EditorController_8h.html" title="inc/EditorController.h" alt="" coords="387,379,531,405"/><area shape="rect" id="node7" href="GraphicView_8h.html" title="inc/GraphicView.h" alt="" coords="315,80,443,107"/><area shape="rect" id="node8" href="Line_8h.html" title="inc/Line.h" alt="" coords="145,155,223,181"/><area shape="rect" id="node9" href="Polyline_8h.html" title="inc/Polyline.h" alt="" coords="247,155,347,181"/><area shape="rect" id="node10" href="Rectangle_8h.html" title="inc/Rectangle.h" alt="" coords="423,155,536,181"/><area shape="rect" id="node11" href="CompoundShape_8h.html" title="inc/CompoundShape.h" alt="" coords="673,155,827,181"/><area shape="rect" id="node6" href="main_8cpp.html" title="src/main.cpp" alt="" coords="410,453,507,480"/><area shape="rect" id="node12" href="IImporter_8h.html" title="inc/IImporter.h" alt="" coords="480,229,587,256"/><area shape="rect" id="node14" href="IExporter_8h.html" title="inc/IExporter.h" alt="" coords="631,229,737,256"/><area shape="rect" id="node13" href="SvgImporter_8h.html" title="inc/SvgImporter.h" alt="" coords="471,304,596,331"/><area shape="rect" id="node15" href="SvgExporter_8h.html" title="inc/SvgExporter.h" alt="" coords="621,304,747,331"/></map>
+</div>
+</div>
+<p><a href="IShape_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics_1_1IShape.html">graphics::IShape</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Интерфейс графической фигуры.  <a href="classgraphics_1_1IShape.html#details">Подробнее...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacegraphics"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphics.html">graphics</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:a60a0dffbd081c853deaba4bb6653c897"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">graphics::Color</a> { <br/>
+&#160;&#160;<a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a105947507fb46df98d0a9a73b290d638">graphics::WHITE</a> = 0, 
+<a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897aa702befc65c0250065ea5961c2d38e0e">graphics::RED</a>, 
+<a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a6691f3561e6c9ebdc19385e662b9b5ef">graphics::GREEN</a>, 
+<a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a3761439984b0ca3eef1cbc26f0e7f87b">graphics::BLUE</a>, 
+<br/>
+&#160;&#160;<a class="el" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897ac8aeb10ec54f50404ca6664c667b5c72">graphics::BLACK</a>
+<br/>
+ }</td></tr>
+<tr class="memdesc:a60a0dffbd081c853deaba4bb6653c897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Цвет фигуры.  <a href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Подробнее...</a><br/></td></tr>
+<tr class="separator:a60a0dffbd081c853deaba4bb6653c897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9743daea70117b796550e7ca42e84677"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">graphics::ShapeType</a> { <br/>
+&#160;&#160;<a class="el" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677ac5da379f30f9bee8856140e729494989">graphics::LINE</a> = 0, 
+<a class="el" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677a03c0c787aa9b014f96175dd4406ba957">graphics::POLYLINE</a>, 
+<a class="el" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677aae36c0c37adb43a36af96a6aa76282bf">graphics::RECTANGLE</a>, 
+<a class="el" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677aa4b292202b749ef6cad60ff3df6d77a8">graphics::CIRCLE</a>, 
+<br/>
+&#160;&#160;<a class="el" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677a2372039622bb55d8f2c68095549633b8">graphics::COMPOUND</a> = 255
+<br/>
+ }</td></tr>
+<tr class="memdesc:a9743daea70117b796550e7ca42e84677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип фигуры.  <a href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">Подробнее...</a><br/></td></tr>
+<tr class="separator:a9743daea70117b796550e7ca42e84677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

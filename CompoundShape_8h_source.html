@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graph_editor: Исходный файл inc/CompoundShape.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graph_editor
+   </div>
+   <div id="projectbrief">Otus homework 05</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CompoundShape.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="CompoundShape_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="IShape_8h.html">IShape.h</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>graphics {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgraphics_1_1CompoundShape.html">CompoundShape</a> : <span class="keyword">public</span> <a class="code" href="classgraphics_1_1IShape.html">IShape</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classgraphics_1_1CompoundShape.html#a0a62feef93fbf96de3dca31c8b3acba3">CompoundShape</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="classgraphics_1_1CompoundShape.html#a0a62feef93fbf96de3dca31c8b3acba3">CompoundShape</a>(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1CompoundShape.html">CompoundShape</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="classgraphics_1_1CompoundShape.html#a0a62feef93fbf96de3dca31c8b3acba3">CompoundShape</a>(<a class="code" href="classgraphics_1_1CompoundShape.html">CompoundShape</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="classgraphics_1_1CompoundShape.html#a5a5bc5ce696b1f4103ec556cc616e2f8">~CompoundShape</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="classgraphics_1_1CompoundShape.html">CompoundShape</a>&amp; <a class="code" href="classgraphics_1_1CompoundShape.html#a65a19af80450fb5a9839b5a8bef381a0">operator = </a>(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1CompoundShape.html">CompoundShape</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="classgraphics_1_1CompoundShape.html">CompoundShape</a>&amp; <a class="code" href="classgraphics_1_1CompoundShape.html#a65a19af80450fb5a9839b5a8bef381a0">operator = </a>(<a class="code" href="classgraphics_1_1CompoundShape.html">CompoundShape</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#a50e1fd3ad9129604f298b399f973b978">   28</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1CompoundShape.html#a50e1fd3ad9129604f298b399f973b978">clear</a>() {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    shapes_.clear();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#a383030446ee84fc28af0396eb64170e5">   36</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1CompoundShape.html#a383030446ee84fc28af0396eb64170e5">push</a>(std::unique_ptr&lt;IShape&gt;&amp;&amp; shape) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    shapes_.emplace_back(std::move(shape));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#ae0ffd04c7262b8490eea7302c2a108ab">   44</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1CompoundShape.html#ae0ffd04c7262b8490eea7302c2a108ab">push_from</a>(<a class="code" href="classgraphics_1_1CompoundShape.html">CompoundShape</a>&amp; other) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp;&amp; it: other.shapes_)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      shapes_.emplace_back(std::move(it));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    other.shapes_.clear();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Pred&gt;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#a22ecef2784cba7e33c47363660c143bb">   57</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1CompoundShape.html#a22ecef2784cba7e33c47363660c143bb">push_from_if</a>(<a class="code" href="classgraphics_1_1CompoundShape.html">CompoundShape</a>&amp; other, Pred pred) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> it = other.shapes_.begin(); it != other.shapes_.end();) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span>(pred((*it)-&gt;get_coords_chain())) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        shapes_.emplace_back(std::move(*it));</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        it = other.shapes_.erase(it);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        ++it;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#a06a7db816f6cc6d2f8e93a666234f83d">   73</a></span>&#160;  <a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">ShapeType</a> <a class="code" href="classgraphics_1_1CompoundShape.html#a06a7db816f6cc6d2f8e93a666234f83d">get_type</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677a2372039622bb55d8f2c68095549633b8">COMPOUND</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#a97ce42266876fff97b5c51094d8d061f">   81</a></span>&#160;  <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> <a class="code" href="classgraphics_1_1CompoundShape.html#a97ce42266876fff97b5c51094d8d061f">get_color</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a105947507fb46df98d0a9a73b290d638">WHITE</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#aba3e99e38b14b852dda0d72cc4a3fcba">   89</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1CompoundShape.html#aba3e99e38b14b852dda0d72cc4a3fcba">set_color</a>(<a class="code" href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">Color</a> color)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; it: shapes_)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      it-&gt;set_color(color);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#ae5e201fa3a3960cfacd3d18a47d4f90e">   98</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1CompoundShape.html#ae5e201fa3a3960cfacd3d18a47d4f90e">move</a>(<span class="keyword">const</span> <a class="code" href="classgraphics_1_1Coords.html">Coords</a>&amp; offset)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; it: shapes_)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      it-&gt;move(offset);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#a96312906bffe04ae84a3a0d0832267f6">  106</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1CompoundShape.html#a96312906bffe04ae84a3a0d0832267f6">redraw</a>(<a class="code" href="classgraphics_1_1GraphicView.html">GraphicView</a>&amp; view)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; it: shapes_)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      it-&gt;redraw(view);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#a40459707b183c5677604975405fe9229">  115</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1CompoundShape.html#a40459707b183c5677604975405fe9229">mark_as_selected</a>(<span class="keywordtype">bool</span> is_selected)<span class="keyword"> override </span>{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; it: shapes_)</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      it-&gt;mark_as_selected(is_selected);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#a09219f556740887b977c583a84c7a443">  124</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">CoordsChain</a> <a class="code" href="classgraphics_1_1CompoundShape.html#a09219f556740887b977c583a84c7a443">get_coords_chain</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">CoordsChain</a>{};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classgraphics_1_1CompoundShape.html#a7fa44cc01fb15af6dc60cdf4415ce288">  132</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classgraphics_1_1CompoundShape.html#a7fa44cc01fb15af6dc60cdf4415ce288">is_empty</a>() {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> shapes_.empty();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  std::list&lt;std::unique_ptr&lt;IShape&gt;&gt; shapes_;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;};</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;} <span class="comment">// namespace graphics.</span></div>
+<div class="ttc" id="namespacegraphics_html_a60a0dffbd081c853deaba4bb6653c897"><div class="ttname"><a href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897">graphics::Color</a></div><div class="ttdeci">Color</div><div class="ttdoc">Цвет фигуры. </div><div class="ttdef"><b>Definition:</b> IShape.h:12</div></div>
+<div class="ttc" id="namespacegraphics_html_adff3f9bbb4c72f8c245f38c39f650b1d"><div class="ttname"><a href="namespacegraphics.html#adff3f9bbb4c72f8c245f38c39f650b1d">graphics::CoordsChain</a></div><div class="ttdeci">std::vector&lt; Coords &gt; CoordsChain</div><div class="ttdoc">Тип цепочки координат нескольких точек. </div><div class="ttdef"><b>Definition:</b> Coords.h:97</div></div>
+<div class="ttc" id="classgraphics_1_1GraphicView_html"><div class="ttname"><a href="classgraphics_1_1GraphicView.html">graphics::GraphicView</a></div><div class="ttdoc">Класс представления графического редактора. </div><div class="ttdef"><b>Definition:</b> GraphicView.h:13</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a22ecef2784cba7e33c47363660c143bb"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a22ecef2784cba7e33c47363660c143bb">graphics::CompoundShape::push_from_if</a></div><div class="ttdeci">void push_from_if(CompoundShape &amp;other, Pred pred)</div><div class="ttdoc">Переложить фигуры из другой составной фигуры если выполняется предикат для точек фигуры. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:57</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_aba3e99e38b14b852dda0d72cc4a3fcba"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#aba3e99e38b14b852dda0d72cc4a3fcba">graphics::CompoundShape::set_color</a></div><div class="ttdeci">void set_color(Color color) override</div><div class="ttdoc">Дать цвет фигуры. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:89</div></div>
+<div class="ttc" id="namespacegraphics_html_a9743daea70117b796550e7ca42e84677a2372039622bb55d8f2c68095549633b8"><div class="ttname"><a href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677a2372039622bb55d8f2c68095549633b8">graphics::COMPOUND</a></div><div class="ttdef"><b>Definition:</b> IShape.h:26</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a65a19af80450fb5a9839b5a8bef381a0"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a65a19af80450fb5a9839b5a8bef381a0">graphics::CompoundShape::operator=</a></div><div class="ttdeci">CompoundShape &amp; operator=(const CompoundShape &amp;)=delete</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a40459707b183c5677604975405fe9229"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a40459707b183c5677604975405fe9229">graphics::CompoundShape::mark_as_selected</a></div><div class="ttdeci">void mark_as_selected(bool is_selected) override</div><div class="ttdoc">Пометить фигуру как выделенную. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:115</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a50e1fd3ad9129604f298b399f973b978"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a50e1fd3ad9129604f298b399f973b978">graphics::CompoundShape::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Очистить составную фигуру. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:28</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a97ce42266876fff97b5c51094d8d061f"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a97ce42266876fff97b5c51094d8d061f">graphics::CompoundShape::get_color</a></div><div class="ttdeci">Color get_color() const override</div><div class="ttdoc">Дать цвет фигуры. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:81</div></div>
+<div class="ttc" id="classgraphics_1_1IShape_html"><div class="ttname"><a href="classgraphics_1_1IShape.html">graphics::IShape</a></div><div class="ttdoc">Интерфейс графической фигуры. </div><div class="ttdef"><b>Definition:</b> IShape.h:32</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a0a62feef93fbf96de3dca31c8b3acba3"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a0a62feef93fbf96de3dca31c8b3acba3">graphics::CompoundShape::CompoundShape</a></div><div class="ttdeci">CompoundShape()=default</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a7fa44cc01fb15af6dc60cdf4415ce288"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a7fa44cc01fb15af6dc60cdf4415ce288">graphics::CompoundShape::is_empty</a></div><div class="ttdeci">bool is_empty()</div><div class="ttdoc">Содержатся-ли в составной фигуре другие фигуры. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:132</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html"><div class="ttname"><a href="classgraphics_1_1Coords.html">graphics::Coords</a></div><div class="ttdoc">Класс описывающий координаты точки в 2D пространстве. </div><div class="ttdef"><b>Definition:</b> Coords.h:12</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a383030446ee84fc28af0396eb64170e5"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a383030446ee84fc28af0396eb64170e5">graphics::CompoundShape::push</a></div><div class="ttdeci">void push(std::unique_ptr&lt; IShape &gt; &amp;&amp;shape)</div><div class="ttdoc">Добавить фигуру в составную. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:36</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_ae0ffd04c7262b8490eea7302c2a108ab"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#ae0ffd04c7262b8490eea7302c2a108ab">graphics::CompoundShape::push_from</a></div><div class="ttdeci">void push_from(CompoundShape &amp;other)</div><div class="ttdoc">Переложить фигуры из другой составной фигуры. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:44</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_ae5e201fa3a3960cfacd3d18a47d4f90e"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#ae5e201fa3a3960cfacd3d18a47d4f90e">graphics::CompoundShape::move</a></div><div class="ttdeci">void move(const Coords &amp;offset) override</div><div class="ttdoc">Переместить фигуру. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:98</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a5a5bc5ce696b1f4103ec556cc616e2f8"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a5a5bc5ce696b1f4103ec556cc616e2f8">graphics::CompoundShape::~CompoundShape</a></div><div class="ttdeci">~CompoundShape()=default</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a96312906bffe04ae84a3a0d0832267f6"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a96312906bffe04ae84a3a0d0832267f6">graphics::CompoundShape::redraw</a></div><div class="ttdeci">void redraw(GraphicView &amp;view) override</div><div class="ttdoc">Перерисовать фигуру в представлении. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:106</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a06a7db816f6cc6d2f8e93a666234f83d"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a06a7db816f6cc6d2f8e93a666234f83d">graphics::CompoundShape::get_type</a></div><div class="ttdeci">ShapeType get_type() const override</div><div class="ttdoc">Дать тип фигуры. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:73</div></div>
+<div class="ttc" id="namespacegraphics_html_a60a0dffbd081c853deaba4bb6653c897a105947507fb46df98d0a9a73b290d638"><div class="ttname"><a href="namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a105947507fb46df98d0a9a73b290d638">graphics::WHITE</a></div><div class="ttdef"><b>Definition:</b> IShape.h:13</div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html">graphics::CompoundShape</a></div><div class="ttdoc">Класс составной фигуры. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:13</div></div>
+<div class="ttc" id="namespacegraphics_html_a9743daea70117b796550e7ca42e84677"><div class="ttname"><a href="namespacegraphics.html#a9743daea70117b796550e7ca42e84677">graphics::ShapeType</a></div><div class="ttdeci">ShapeType</div><div class="ttdoc">Тип фигуры. </div><div class="ttdef"><b>Definition:</b> IShape.h:21</div></div>
+<div class="ttc" id="IShape_8h_html"><div class="ttname"><a href="IShape_8h.html">IShape.h</a></div></div>
+<div class="ttc" id="classgraphics_1_1CompoundShape_html_a09219f556740887b977c583a84c7a443"><div class="ttname"><a href="classgraphics_1_1CompoundShape.html#a09219f556740887b977c583a84c7a443">graphics::CompoundShape::get_coords_chain</a></div><div class="ttdeci">virtual CoordsChain get_coords_chain() const override</div><div class="ttdoc">Дать координаты точек фигуры. </div><div class="ttdef"><b>Definition:</b> CompoundShape.h:124</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
