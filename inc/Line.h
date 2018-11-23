@@ -60,7 +60,7 @@ public:
    * @brief Перерисовать фигуру в представлении.
    */
   void redraw(GraphicView& view) override {
-    view.draw(LINE, color_, points_, is_selected_);
+//    view.draw(LINE, color_, points_, is_selected_);
   }
 
   /**

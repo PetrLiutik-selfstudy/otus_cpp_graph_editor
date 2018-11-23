@@ -57,7 +57,7 @@ class Polyline : public IShape {
    * @brief Перерисовать фигуру в представлении.
    */
   void redraw(GraphicView& view) override {
-    view.draw(POLYLINE, color_, points_, is_selected_);
+//    view.draw(POLYLINE, color_, points_, is_selected_);
   }
 
   /**

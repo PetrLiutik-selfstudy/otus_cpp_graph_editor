@@ -59,7 +59,7 @@ public:
    * @brief Перерисовать фигуру в представлении.
    */
   void redraw(GraphicView& view) override {
-    view.draw(CIRCLE, color_, points_, is_selected_);
+//    view.draw(CIRCLE, color_, points_, is_selected_);
   }
 
   /**

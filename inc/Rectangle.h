@@ -65,7 +65,7 @@ public:
    * @brief Перерисовать фигуру в представлении.
    */
   void redraw(GraphicView& view) override {
-    view.draw(RECTANGLE, color_, points_, is_selected_);
+//    view.draw(RECTANGLE, color_, points_, is_selected_);
   }
 
   /**
