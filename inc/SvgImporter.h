@@ -19,7 +19,7 @@ public:
    * @param filename - имя файла.
    * @param image - изображение.
    */
-  bool load(std::string filename, CompoundShape& image) override {
+  bool load(std::string filename, Document& image) override {
     std::cout << "Load image from " << filename << std::endl;
     return true;
   }

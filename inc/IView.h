@@ -5,6 +5,9 @@
 
 namespace graphics {
 
+/**
+ * @brief Интерфейс графического представления.
+ */
 class IView {
 public:
   virtual ~IView() = default;
@@ -12,9 +15,7 @@ public:
   /**
    * @brief Перерисовать вид.
    */
-  virtual void render() const = 0;
-
-  virtual void say_hello(const std::string& str) const = 0 ; // only for exposition
+  virtual void render() = 0;
 };
 
 using view_t = std::unique_ptr<IView>;

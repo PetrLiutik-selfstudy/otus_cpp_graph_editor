@@ -4,44 +4,60 @@
 
 #include <functional>
 #include <iostream>
-#include <map>
 #include <string>
+#include <vector>
 
 namespace graphics {
 
-/// Элемент формы.
+/**
+ * @brief Элемент формы.
+ */
 class FormItem {
 public:
-  explicit FormItem(const Coords& p1, const Coords& p2) : p1_{p1}, p2_{p2}{
+  /**
+   * @brief Конструктор элемента формы.
+   * @param p1 - координата нижнего левого угла.
+   * @param p2 - координата нижнего правого угла.
+   * @param on_event - фукция обратного вызова при событии над элементом формы.
+   */
+  explicit FormItem(const Coords& p1, const Coords& p2, std::function<void()> on_event) :
+    p1_{p1}, p2_{p2}, on_event_{on_event} {
   }
+
   virtual ~FormItem() = default;
 
-  virtual void redraw() {}
-
-
-  bool operator < (const FormItem&) const {
-    return false;
+  /**
+   * @brief Перерисовка элемента формы.
+   */
+  virtual void redraw() {
   }
 
 private:
-  /// Координаты нижнего левого угла элемента.
+  /// Координаты нижнего левого и правого верхнего угла элемента.
   Coords p1_;
-  /// Координаты правого верхнего угла элемента.
   Coords p2_;
+
+  /// Обратный вызова при событии над элементом формы.
+  std::function<void()> on_event_;
 };
 
-/// Элемент формы - кнопка.
+/// Тип набора элементов формы.
+using form_items_t = std::vector<FormItem>;
+
+/**
+* @brief Элемент формы - кнопка.
+*/
 class Button : public FormItem {
 public:
-  explicit Button(const std::string& name, const Coords& p1, const Coords& p2) :
-    FormItem{p1, p2}, name_{name} {
-  }
-
-  Button(Button&&) = default;
-  ~Button() = default;
-
-  void redraw() {
-    std::cout << "Button" << name_ << std::endl;
+  /**
+   * @brief Конструктор кнопки.
+   * @param name - название кнопки.
+   * @param p1 - координата нижнего левого угла.
+   * @param p2 - координата нижнего правого угла.
+   * @param on_event - фукция обратного вызова при событии над элементом формы.
+   */
+  explicit Button(const std::string& name, const Coords& p1, const Coords& p2, std::function<void()> on_event) :
+    FormItem{p1, p2, on_event}, name_{name} {
   }
 
 private:
@@ -49,16 +65,21 @@ private:
   std::string name_;
 };
 
-/// Элемент формы - канва для рисования.
+
+/**
+* @brief Элемент формы - канва для рисования.
+*/
 class Canvas : public FormItem {
+public:
+  /**
+   * @brief Конструктор канвы.
+   * @param p1 - координата нижнего левого угла.
+   * @param p2 - координата нижнего правого угла.
+   * @param on_event - фукция обратного вызова при событии над элементом формы.
+   */
+  explicit Canvas(const Coords& p1, const Coords& p2, std::function<void()> on_event) : FormItem{p1, p2, on_event} {
+  }
 };
-
-/// Событие возникающее при воздействии на элемент формы.
-class Event {
-};
-
-/// Тип набора элементов формы.
-using form_items_t = std::map<FormItem, std::function<void(const Event& event)>>;
 
 
 /**
@@ -66,20 +87,24 @@ using form_items_t = std::map<FormItem, std::function<void(const Event& event)>>
  */
 class Form  {
 public:
+  /**
+   * @brief Конструтор формы.
+   * @param items - элементы формы.
+   */
   explicit Form(const form_items_t& items) : form_items_{items} {
   }
-
   virtual ~Form() = default;
 
+  /**
+   * @brief Перерисовка формы.
+   */
+  void redraw() {
+    for(auto& it: form_items_)
+      it.redraw();
+  }
+
 private:
-
-  /// Методы вызываемые по событиям от мыши.
-  void on_mouse_left_click(const Coords&) {
-  }
-
-  void on_mouse_right_click(const Coords&) {
-  }
-
+  /// Элементы формы.
   form_items_t form_items_;
 };
 

@@ -19,7 +19,7 @@ public:
    * @param filename - имя файла.
    * @param image - изображение.
    */
-  bool save(std::string filename, const CompoundShape& image) override {
+  bool save(std::string filename, const Document& image) override {
     std::cout << "Save image to " << filename << std::endl;
     return true;
   }

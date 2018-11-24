@@ -1,11 +1,10 @@
 ﻿#pragma once
 
-#include "IShape.h"
+#include "Document.h"
 #include "EditorModel.h"
-#include "ShapeFactory.h"
-
-//#include "SvgExporter.h"
-//#include "SvgImporter.h"
+#include "Form.h"
+#include "SvgExporter.h"
+#include "SvgImporter.h"
 
 #include <memory>
 #include <string>
@@ -21,189 +20,145 @@ public:
   ~EditorController() = default;
 
   /**
-   * @brief Создание отображения графического редактора.
-   * @tparam T - тип отображения.
-   * @tparam Args - тип аргументов используемых при создании отображения.
-   * @param args - аргументы используемые при создании отображения.
+   * @brief Создание представления графического редактора.
+   * @tparam T - тип представления.
+   * @tparam Args - тип аргументов используемых при создании представления.
+   * @param args - аргументы используемые при создании представления.
    */
   template<typename T, typename... Args>
   void create_view(Args&&... args) {
     model_.add_view(std::make_unique<T>(model_, *this, std::forward<Args>(args)...));
   }
 
-
-  void handle_input(char input) {
-    if(input == '+')
-      model_.increment() ;
-    else if(input == '-')
-      model_.decrement() ;
+  /**
+   * @brief Обработка пользовательского события "выбран отрезок".
+   */
+  void on_choose_line() {
+    shape_type_ = LINE;
   }
-
-
-
-  // note: model_.associated_views() gives (non-mutable) access to the associated views:
-  // for instance:
-  void say_hello_to_all() const {
-    for(const auto& view : model_.associated_views())
-      view->say_hello("controller");
-  }
-
 
   /**
-   * @brief Создание новой фигуры.
-   * @param type - тип фигуры.
-   * @param points - координаты точек, необходимых для построения фигуры.
+   * @brief Обработка пользовательского события "выбрана ломаная".
    */
-  void create_shape(ShapeType type, const CoordsChain& points) {
-    selected_.mark_as_selected(false);
-    document_.push_from(selected_);
-    auto shape = shape_factory_.create_shape(type, color_, points);
-    document_.push(std::move(shape));
-    update_views();
+  void on_choose_poly() {
+    shape_type_ = POLYLINE;
   }
 
+  /**
+   * @brief Обработка пользовательского события "выбран прямоугольник".
+   */
+  void on_choose_rect() {
+    shape_type_ = RECTANGLE;
+  }
+
+  /**
+   * @brief Обработка пользовательского события "выбран прямоугольник".
+   */
+  void on_choose_circle() {
+    shape_type_ = CIRCLE;
+  }
+
+  /**
+   * @brief Обработка пользовательского события "выбран красный цвет из палитры".
+   */
+  void on_choose_red() {
+    shape_color_ = RED;
+  }
+
+  /**
+   * @brief Обработка пользовательского события "выбран зеленый цвет из палитры".
+   */
+  void on_choose_green() {
+    shape_color_ = GREEN;
+  }
+
+  /**
+   * @brief Обработка пользовательского события "выбран синий цвет из палитры".
+   */
+  void on_choose_blue() {
+    shape_color_ = BLUE;
+  }
+
+  /**
+   * @brief Обработка пользовательского события "нарисовать фигуру".
+   */
+  void on_draw_shape() {
+    model_.create_shape(shape_type_, shape_color_, shape_points_);
+  }
+
+  /**
+   * @brief Обработка пользовательского события "добавить/выбрать точку фигуры".
+   */
+  void on_put_point() {
+    if(!is_selecting_)
+      shape_points_.push_back(Coords{});
+    else
+      model_.select_shape(Coords{});
+  }
+
+  /**
+   * @brief Обработка пользовательского события "выбрать фигуру".
+   */
+  void on_select_shape() {
+    is_selecting_ = true;
+  }
+
+  /**
+   * @brief Создать номый документ.
+   */
+  void on_create_new_document() {
+    doc_.clear();
+  }
+
+  /**
+   * @brief Очистить документ.
+   */
+  void on_clear_document() {
+    doc_.clear();
+  }
+
+  /**
+   * @brief Загрузить документ из файла.
+   */
+  void on_load_svg_document() {
+    importer_->load(filename_, doc_);
+    model_.add_shapes(doc_.get_data());
+  }
+
+  /**
+   * @brief Сохранить документ в файл.
+   */
+  void on_save_svg_document() {
+    doc_.set_data(model_.get_shapes());
+    exporter_->save(filename_, doc_);
+  }
+
+  /**
+   * @brief Основной рабочий процесс.
+   */
+  void start() {
+  }
+
+
 private:
+  /// Тип рисуемой фигуры.
+  ShapeType shape_type_{LINE};
+  /// Цвет рисуемой фигуры.
+  Color shape_color_{RED};
+  /// Координаты точек рисуемой фигуры.
+  CoordsChain shape_points_;
+  /// Режим выбора фигур.
+  bool is_selecting_{};
   /// Модель графического редактора.
-  EditorModel model_;
-
-  /// Фабрика фигур.
-  ShapeFactory shape_factory_{};
+  EditorModel model_{};
+  /// Документ.
+  Document doc_{};
+  /// Имя файла.
+  std::string filename_{};
+  /// Импортер документа.
+  std::unique_ptr<IImporter> importer_{};
+  /// Экспортер документа.
+  std::unique_ptr<IExporter> exporter_{};
 };
-
-
-///**
-// * @brief Класс контроллера редактора.
-// */
-//class EditorController {
-//  public:
-//    explicit EditorController(EditorModel& model, GraphicView& view) {
-//    }
-//    ~EditorController() = default;
-
-//    /**
-//     * @brief Создать новый документ.
-//     */
-//    void create_new_document() {
-//      model_.create_new_document();
-//    }
-
-//    /**
-//     * @brief Очистить документ.
-//     */
-//    void clear_document() {
-//      model_.clear_document();
-//    }
-
-//    /**
-//     * @brief Сохранение документа в файл в формате SVG.
-//     * @param filename - имя файла.
-//     */
-//    void save_svg_document(const std::string& filename) {
-//      model_.save_document(std::make_shared<SvgExporter>(), filename);
-//    }
-
-//    /**
-//     * @brief Загрузка документа из файла
-//     * @param filename - имя файла.
-//     */
-//    void load_svg_document(const std::string& filename) {
-//      model_.load_document(std::make_shared<SvgImporter>(), filename);
-//    }
-
-//    /**
-//     * @brief Выбор цвета рисования фигур.
-//     * @param color - цвет.
-//     */
-//    void choose_color(Color color) {
-//      model_.choose_color(color);
-//    }
-
-//    /**
-//     * @brief Нарисовать отрезок.
-//     * @param p1 - координата начала отрезка.
-//     * @param p2 - координата конца отрезка.
-//     */
-//    void add_line(const Coords& p1, const Coords& p2) {
-//      model_.create_shape(LINE, {p1, p2});
-//    }
-
-//    /**
-//     * @brief Нарисовать ломаную линию.
-//     * @param points - точки ломанной линии.
-//     */
-//    void add_polyline(const CoordsChain& points) {
-//      model_.create_shape(POLYLINE, points);
-//    }
-
-//    /**
-//     * @brief Нарисовать прямоугольник.
-//     * @param p1 - координата нижней левой точки прямоугольника.
-//     * @param p2 - координата верхней правой точки прямоугольника.
-//     */
-//    void add_rectangle(const Coords& p1, const Coords& p2) {
-
-//    }
-
-//    /**
-//     * @brief Нарисовать окружность.
-//     * @param c - координаты центра окружности.
-//     * @param r - точка лежащая на окружности (для задания радиуса).
-//     */
-//    void add_circle(const Coords& c, const Coords& r) {
-//      model_.create_shape(CIRCLE, {c, r});
-//    }
-
-//    /**
-//     * @brief Выделить фигуру.
-//     * @param p - координата точки принадлежащей выделяемой фигуре.
-//     */
-//    bool select_shape(const Coords& p) {
-//      return model_.select_shape(p);
-//    }
-
-//    /**
-//     * @brief Выделить фигуру(ы) в пределах указанного прямоугольника.
-//     * @param p1 - координата нижней левой точки прямоугольника.
-//     * @param p2 - координата верхней правой точки прямоугольника.
-//     */
-//    bool select_shape(const Coords& p1, const Coords& p2) {
-//      return model_.select_shape(p1, p2);
-//    }
-
-//    /**
-//     * @brief Отменить выделение фигуры.
-//     */
-//    void deselect_shape() {
-//      model_.deselect_shape();
-//    }
-
-//    /**
-//     * @brief Изменить цвет выделенной фигуры.
-//     * @param offset - смещение.
-//     */
-//    void change_shape_color(Color color) {
-//      model_.change_shape_color(color);
-//    }
-
-//    /**
-//     * @brief Передвинуть выделенную фигуру(ы).
-//     * @param offset - смещение.
-//     */
-//    void move_shape(const Coords& offset) {
-//      model_.move_shape(offset);
-//    }
-
-//    /**
-//     * @brief Удалить выбраную фигуру(ы).
-//     */
-//    void remove_shape() {
-//      model_.remove_shape();
-//    }
-
-//  private:
-
-//    EditorModel model_;
-
-//};
 
 } // namespace graphics.

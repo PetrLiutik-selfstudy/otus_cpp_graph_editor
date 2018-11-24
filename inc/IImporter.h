@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include "CompoundShape.h"
+#include "Document.h"
 
 #include <string>
 
@@ -18,7 +18,7 @@ public:
    * @param filename - имя файла.
    * @param image - изображение.
    */
-  virtual bool load(std::string filename, CompoundShape& image) = 0;
+  virtual bool load(std::string filename, Document& image) = 0;
 };
 
 } // namespace graphics.

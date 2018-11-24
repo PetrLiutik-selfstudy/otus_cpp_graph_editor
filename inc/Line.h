@@ -81,8 +81,8 @@ public:
 
 private:
   CoordsChain points_;
-  Color      color_;
-  bool       is_selected_{};
+  Color       color_;
+  bool        is_selected_{};
 };
 
 } // namespace graphics.
