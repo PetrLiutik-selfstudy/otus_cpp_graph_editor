@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rectangle',['Rectangle',['../classgraphics_1_1Rectangle.html',1,'graphics']]]
+  ['graphicview',['GraphicView',['../classgraphics_1_1GraphicView.html',1,'graphics']]]
 ];

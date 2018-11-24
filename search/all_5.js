@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['get_5fcolor',['get_color',['../classgraphics_1_1Circle.html#ad0aa03d488b81b2059141fea5ae88a07',1,'graphics::Circle::get_color()'],['../classgraphics_1_1CompoundShape.html#a97ce42266876fff97b5c51094d8d061f',1,'graphics::CompoundShape::get_color()'],['../classgraphics_1_1IShape.html#a81d0babdbc753bce0142454804cc8a10',1,'graphics::IShape::get_color()'],['../classgraphics_1_1Line.html#aefed339e1e0c26ee1bcb4c7f29f70547',1,'graphics::Line::get_color()'],['../classgraphics_1_1Polyline.html#ad4941e3eebb58e0e8bb31df0e9e36215',1,'graphics::Polyline::get_color()'],['../classgraphics_1_1Rectangle.html#aa00800369cf72ceea53dd65c59afd822',1,'graphics::Rectangle::get_color()']]],
-  ['get_5fcoords_5fchain',['get_coords_chain',['../classgraphics_1_1Circle.html#a368d814040a0a90aa5be2797e4baa041',1,'graphics::Circle::get_coords_chain()'],['../classgraphics_1_1CompoundShape.html#a09219f556740887b977c583a84c7a443',1,'graphics::CompoundShape::get_coords_chain()'],['../classgraphics_1_1IShape.html#a030e41eabf5ea80ba45eb9dc4856387a',1,'graphics::IShape::get_coords_chain()'],['../classgraphics_1_1Line.html#ac013c84bf0e83069093cc753d8c96e57',1,'graphics::Line::get_coords_chain()'],['../classgraphics_1_1Polyline.html#a241021cc6447427bf6da583a491a869d',1,'graphics::Polyline::get_coords_chain()'],['../classgraphics_1_1Rectangle.html#afd6571e016a86df5fb598ed8b129b6ac',1,'graphics::Rectangle::get_coords_chain()']]],
-  ['get_5fdistance',['get_distance',['../classgraphics_1_1Coords.html#a1e9f24df101d2fcafef6e56e89bd016a',1,'graphics::Coords::get_distance()'],['../namespacegraphics.html#acbed15e998d566f0fd1a37dd1691fe78',1,'graphics::get_distance()']]],
-  ['get_5ftype',['get_type',['../classgraphics_1_1Circle.html#ac2313823a4bfbb5ee8dcd751811f2616',1,'graphics::Circle::get_type()'],['../classgraphics_1_1CompoundShape.html#a06a7db816f6cc6d2f8e93a666234f83d',1,'graphics::CompoundShape::get_type()'],['../classgraphics_1_1IShape.html#a521410b4a055381d63da209fffccbe31',1,'graphics::IShape::get_type()'],['../classgraphics_1_1Line.html#a9c3d2c7aa7839d145b876c82df64954b',1,'graphics::Line::get_type()'],['../classgraphics_1_1Polyline.html#a939c247e1e79525c7e71e081a4c160df',1,'graphics::Polyline::get_type()'],['../classgraphics_1_1Rectangle.html#abe892099e9cf37e64f1c51b5943b2a77',1,'graphics::Rectangle::get_type()']]],
-  ['get_5fx_5fcoord',['get_x_coord',['../classgraphics_1_1Coords.html#a506c4f87ee00a507dfbdbdea5585396f',1,'graphics::Coords']]],
-  ['get_5fy_5fcoord',['get_y_coord',['../classgraphics_1_1Coords.html#a9df3e32ad8c6f6fa426214e40ad2a6be',1,'graphics::Coords']]],
-  ['graphics',['graphics',['../namespacegraphics.html',1,'']]],
-  ['graphicview',['GraphicView',['../classgraphics_1_1GraphicView.html',1,'graphics']]],
-  ['graphicview',['GraphicView',['../classgraphics_1_1GraphicView.html#aa78aacb84a0c5ea8cc8b3d35f7300eb7',1,'graphics::GraphicView']]],
-  ['graphicview_2eh',['GraphicView.h',['../GraphicView_8h.html',1,'']]],
-  ['green',['GREEN',['../namespacegraphics.html#a60a0dffbd081c853deaba4bb6653c897a6691f3561e6c9ebdc19385e662b9b5ef',1,'graphics']]]
+  ['form',['Form',['../classgraphics_1_1Form.html',1,'graphics']]],
+  ['form',['Form',['../classgraphics_1_1Form.html#a6dce127f02ce00b868b2c85499a4b866',1,'graphics::Form']]],
+  ['form_2eh',['Form.h',['../Form_8h.html',1,'']]],
+  ['form_5fitems_5ft',['form_items_t',['../namespacegraphics.html#ab349606a536a205ff50662e5ee3258d7',1,'graphics']]],
+  ['formitem',['FormItem',['../classgraphics_1_1FormItem.html#a247efa845e3e366df603a3691d6fc735',1,'graphics::FormItem']]],
+  ['formitem',['FormItem',['../classgraphics_1_1FormItem.html',1,'graphics']]]
 ];

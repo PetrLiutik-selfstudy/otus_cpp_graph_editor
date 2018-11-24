@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graph_editor: Исходный файл inc/Application.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graph_editor
+   </div>
+   <div id="projectbrief">Otus homework 05</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Пространства имен</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Друзья</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Application.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Application_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="GraphicView_8h.html">GraphicView.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IExporter_8h.html">IExporter.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IImporter_8h.html">IImporter.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IView_8h.html">IView.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespacegraphics.html">   11</a></span>&#160;<span class="keyword">namespace </span>graphics {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classgraphics_1_1Application.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgraphics_1_1Application.html">Application</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classgraphics_1_1Application.html#a28da61bccc0002d688ccdd5de03fccc7">   21</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classgraphics_1_1Application.html#a28da61bccc0002d688ccdd5de03fccc7">Application</a>() {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">auto</span> form_items = configure_form();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    controller_.<a class="code" href="classgraphics_1_1EditorController.html#a534f63c637b626b9ff59377629ca2639">create_view</a>&lt;<a class="code" href="classgraphics_1_1GraphicView.html">graphics::GraphicView</a>&gt;(form_items);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classgraphics_1_1Application.html#a38e3c09afe4a08db1e3f3673b973d6ce">~Application</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classgraphics_1_1Application.html#a3487a03055ca49ee4b04c9f1e9e50464">   31</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classgraphics_1_1Application.html#a3487a03055ca49ee4b04c9f1e9e50464">start</a>() {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    controller_.<a class="code" href="classgraphics_1_1EditorController.html#a0e0b81aa87afb4e3af0074888359f0f0">start</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="namespacegraphics.html#ab349606a536a205ff50662e5ee3258d7">form_items_t</a> configure_form() {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="namespacegraphics.html#ab349606a536a205ff50662e5ee3258d7">form_items_t</a> form_items;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    form_items.emplace_back(<a class="code" href="classgraphics_1_1Canvas.html">Canvas</a>{<a class="code" href="classgraphics_1_1Coords.html">Coords</a>{80, 80}, Coords{880, 680}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#ae959408fa3dc92ebc1656af11d968baf">EditorController::on_put_point</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;New document&quot;</span>,   Coords{100, 40}, Coords{120, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#a8c4bcdb69c06736486f954aafcb250ee">EditorController::on_create_new_document</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;Clear document&quot;</span>, Coords{130, 40}, Coords{150, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#aa5dd8d49ed6797e8097c47622b41d3ce">EditorController::on_clear_document</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;Load document&quot;</span>,  Coords{160, 40}, Coords{180, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#a9191a8b961bb7a0dd2e825a2de76dd1c">EditorController::on_load_svg_document</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;Save document&quot;</span>,  Coords{190, 40}, Coords{210, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#af335af6ce97be6d85582f2fc03335191">EditorController::on_save_svg_document</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;Red&quot;</span>,            Coords{200, 40}, Coords{220, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#ac42d44c39319f60fc0f43bfd17e313dc">EditorController::on_choose_red</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;Green&quot;</span>,          Coords{220, 40}, Coords{240, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#acd620f6cf110eb4d6346090ad6521781">EditorController::on_choose_green</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;Blue&quot;</span>,           Coords{260, 40}, Coords{280, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#a97bbc39a1bff2eed9751a9001ccc7820">EditorController::on_choose_blue</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;Line&quot;</span>,           Coords{300, 40}, Coords{320, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#a46db1b1e67b653c25f41ff2f38f9c507">EditorController::on_choose_line</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;Polyline&quot;</span>,       Coords{330, 40}, Coords{350, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#a3d6c4fbebf4bf80a3f9fa59f40841906">EditorController::on_choose_poly</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;Rectangle&quot;</span>,      Coords{360, 40}, Coords{380, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#a5a551ce35684a0157552f16f5c5f298a">EditorController::on_choose_rect</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;Circle&quot;</span>,         Coords{390, 40}, Coords{410, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#ab72c54e43206d4e2eb51e34ca59aa253">EditorController::on_choose_circle</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    form_items.emplace_back(Button{<span class="stringliteral">&quot;Select shape&quot;</span>,   Coords{420, 40}, Coords{430, 60}, std::bind(&amp;<a class="code" href="classgraphics_1_1EditorController.html#a994a133a67c12484a1f3b28c87fb3e88">EditorController::on_select_shape</a>, &amp;controller_)});</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> form_items;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="classgraphics_1_1EditorController.html">graphics::EditorController</a> controller_;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// namespace graphics.</span></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_a8c4bcdb69c06736486f954aafcb250ee"><div class="ttname"><a href="classgraphics_1_1EditorController.html#a8c4bcdb69c06736486f954aafcb250ee">graphics::EditorController::on_create_new_document</a></div><div class="ttdeci">void on_create_new_document()</div><div class="ttdoc">Создать номый документ. </div><div class="ttdef"><b>Definition:</b> EditorController.h:109</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_a9191a8b961bb7a0dd2e825a2de76dd1c"><div class="ttname"><a href="classgraphics_1_1EditorController.html#a9191a8b961bb7a0dd2e825a2de76dd1c">graphics::EditorController::on_load_svg_document</a></div><div class="ttdeci">void on_load_svg_document()</div><div class="ttdoc">Загрузить документ из файла. </div><div class="ttdef"><b>Definition:</b> EditorController.h:123</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_a534f63c637b626b9ff59377629ca2639"><div class="ttname"><a href="classgraphics_1_1EditorController.html#a534f63c637b626b9ff59377629ca2639">graphics::EditorController::create_view</a></div><div class="ttdeci">void create_view(Args &amp;&amp;...args)</div><div class="ttdoc">Создание представления графического редактора. </div><div class="ttdef"><b>Definition:</b> EditorController.h:29</div></div>
+<div class="ttc" id="classgraphics_1_1Application_html_a28da61bccc0002d688ccdd5de03fccc7"><div class="ttname"><a href="classgraphics_1_1Application.html#a28da61bccc0002d688ccdd5de03fccc7">graphics::Application::Application</a></div><div class="ttdeci">Application()</div><div class="ttdoc">Конструктор. </div><div class="ttdef"><b>Definition:</b> Application.h:21</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_a46db1b1e67b653c25f41ff2f38f9c507"><div class="ttname"><a href="classgraphics_1_1EditorController.html#a46db1b1e67b653c25f41ff2f38f9c507">graphics::EditorController::on_choose_line</a></div><div class="ttdeci">void on_choose_line()</div><div class="ttdoc">Обработка пользовательского события &quot;выбран отрезок&quot;. </div><div class="ttdef"><b>Definition:</b> EditorController.h:36</div></div>
+<div class="ttc" id="classgraphics_1_1GraphicView_html"><div class="ttname"><a href="classgraphics_1_1GraphicView.html">graphics::GraphicView</a></div><div class="ttdoc">Класс представления графического редактора. </div><div class="ttdef"><b>Definition:</b> GraphicView.h:17</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_af335af6ce97be6d85582f2fc03335191"><div class="ttname"><a href="classgraphics_1_1EditorController.html#af335af6ce97be6d85582f2fc03335191">graphics::EditorController::on_save_svg_document</a></div><div class="ttdeci">void on_save_svg_document()</div><div class="ttdoc">Сохранить документ в файл. </div><div class="ttdef"><b>Definition:</b> EditorController.h:131</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html"><div class="ttname"><a href="classgraphics_1_1EditorController.html">graphics::EditorController</a></div><div class="ttdoc">Класс контроллера редактора. </div><div class="ttdef"><b>Definition:</b> EditorController.h:17</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_a994a133a67c12484a1f3b28c87fb3e88"><div class="ttname"><a href="classgraphics_1_1EditorController.html#a994a133a67c12484a1f3b28c87fb3e88">graphics::EditorController::on_select_shape</a></div><div class="ttdeci">void on_select_shape()</div><div class="ttdoc">Обработка пользовательского события &quot;выбрать фигуру&quot;. </div><div class="ttdef"><b>Definition:</b> EditorController.h:102</div></div>
+<div class="ttc" id="classgraphics_1_1Application_html_a3487a03055ca49ee4b04c9f1e9e50464"><div class="ttname"><a href="classgraphics_1_1Application.html#a3487a03055ca49ee4b04c9f1e9e50464">graphics::Application::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">Основной рабочий процесс приложения. </div><div class="ttdef"><b>Definition:</b> Application.h:31</div></div>
+<div class="ttc" id="IImporter_8h_html"><div class="ttname"><a href="IImporter_8h.html">IImporter.h</a></div></div>
+<div class="ttc" id="classgraphics_1_1Application_html_a38e3c09afe4a08db1e3f3673b973d6ce"><div class="ttname"><a href="classgraphics_1_1Application.html#a38e3c09afe4a08db1e3f3673b973d6ce">graphics::Application::~Application</a></div><div class="ttdeci">~Application()=default</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_a0e0b81aa87afb4e3af0074888359f0f0"><div class="ttname"><a href="classgraphics_1_1EditorController.html#a0e0b81aa87afb4e3af0074888359f0f0">graphics::EditorController::start</a></div><div class="ttdeci">void start()</div><div class="ttdoc">Основной рабочий процесс. </div><div class="ttdef"><b>Definition:</b> EditorController.h:139</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_ab72c54e43206d4e2eb51e34ca59aa253"><div class="ttname"><a href="classgraphics_1_1EditorController.html#ab72c54e43206d4e2eb51e34ca59aa253">graphics::EditorController::on_choose_circle</a></div><div class="ttdeci">void on_choose_circle()</div><div class="ttdoc">Обработка пользовательского события &quot;выбран прямоугольник&quot;. </div><div class="ttdef"><b>Definition:</b> EditorController.h:57</div></div>
+<div class="ttc" id="IView_8h_html"><div class="ttname"><a href="IView_8h.html">IView.h</a></div></div>
+<div class="ttc" id="IExporter_8h_html"><div class="ttname"><a href="IExporter_8h.html">IExporter.h</a></div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_a5a551ce35684a0157552f16f5c5f298a"><div class="ttname"><a href="classgraphics_1_1EditorController.html#a5a551ce35684a0157552f16f5c5f298a">graphics::EditorController::on_choose_rect</a></div><div class="ttdeci">void on_choose_rect()</div><div class="ttdoc">Обработка пользовательского события &quot;выбран прямоугольник&quot;. </div><div class="ttdef"><b>Definition:</b> EditorController.h:50</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_aa5dd8d49ed6797e8097c47622b41d3ce"><div class="ttname"><a href="classgraphics_1_1EditorController.html#aa5dd8d49ed6797e8097c47622b41d3ce">graphics::EditorController::on_clear_document</a></div><div class="ttdeci">void on_clear_document()</div><div class="ttdoc">Очистить документ. </div><div class="ttdef"><b>Definition:</b> EditorController.h:116</div></div>
+<div class="ttc" id="classgraphics_1_1Coords_html"><div class="ttname"><a href="classgraphics_1_1Coords.html">graphics::Coords</a></div><div class="ttdoc">Класс описывающий координаты точки в 2D пространстве. </div><div class="ttdef"><b>Definition:</b> Coords.h:12</div></div>
+<div class="ttc" id="GraphicView_8h_html"><div class="ttname"><a href="GraphicView_8h.html">GraphicView.h</a></div></div>
+<div class="ttc" id="namespacegraphics_html_ab349606a536a205ff50662e5ee3258d7"><div class="ttname"><a href="namespacegraphics.html#ab349606a536a205ff50662e5ee3258d7">graphics::form_items_t</a></div><div class="ttdeci">std::vector&lt; FormItem &gt; form_items_t</div><div class="ttdoc">Тип набора элементов формы. </div><div class="ttdef"><b>Definition:</b> Form.h:45</div></div>
+<div class="ttc" id="classgraphics_1_1Application_html"><div class="ttname"><a href="classgraphics_1_1Application.html">graphics::Application</a></div><div class="ttdoc">Класс приложения графического редактора. </div><div class="ttdef"><b>Definition:</b> Application.h:16</div></div>
+<div class="ttc" id="classgraphics_1_1Canvas_html"><div class="ttname"><a href="classgraphics_1_1Canvas.html">graphics::Canvas</a></div><div class="ttdoc">Элемент формы - канва для рисования. </div><div class="ttdef"><b>Definition:</b> Form.h:72</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_a3d6c4fbebf4bf80a3f9fa59f40841906"><div class="ttname"><a href="classgraphics_1_1EditorController.html#a3d6c4fbebf4bf80a3f9fa59f40841906">graphics::EditorController::on_choose_poly</a></div><div class="ttdeci">void on_choose_poly()</div><div class="ttdoc">Обработка пользовательского события &quot;выбрана ломаная&quot;. </div><div class="ttdef"><b>Definition:</b> EditorController.h:43</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_ac42d44c39319f60fc0f43bfd17e313dc"><div class="ttname"><a href="classgraphics_1_1EditorController.html#ac42d44c39319f60fc0f43bfd17e313dc">graphics::EditorController::on_choose_red</a></div><div class="ttdeci">void on_choose_red()</div><div class="ttdoc">Обработка пользовательского события &quot;выбран красный цвет из палитры&quot;. </div><div class="ttdef"><b>Definition:</b> EditorController.h:64</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_ae959408fa3dc92ebc1656af11d968baf"><div class="ttname"><a href="classgraphics_1_1EditorController.html#ae959408fa3dc92ebc1656af11d968baf">graphics::EditorController::on_put_point</a></div><div class="ttdeci">void on_put_point()</div><div class="ttdoc">Обработка пользовательского события &quot;добавить/выбрать точку фигуры&quot;. </div><div class="ttdef"><b>Definition:</b> EditorController.h:92</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_acd620f6cf110eb4d6346090ad6521781"><div class="ttname"><a href="classgraphics_1_1EditorController.html#acd620f6cf110eb4d6346090ad6521781">graphics::EditorController::on_choose_green</a></div><div class="ttdeci">void on_choose_green()</div><div class="ttdoc">Обработка пользовательского события &quot;выбран зеленый цвет из палитры&quot;. </div><div class="ttdef"><b>Definition:</b> EditorController.h:71</div></div>
+<div class="ttc" id="classgraphics_1_1EditorController_html_a97bbc39a1bff2eed9751a9001ccc7820"><div class="ttname"><a href="classgraphics_1_1EditorController.html#a97bbc39a1bff2eed9751a9001ccc7820">graphics::EditorController::on_choose_blue</a></div><div class="ttdeci">void on_choose_blue()</div><div class="ttdoc">Обработка пользовательского события &quot;выбран синий цвет из палитры&quot;. </div><div class="ttdef"><b>Definition:</b> EditorController.h:78</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

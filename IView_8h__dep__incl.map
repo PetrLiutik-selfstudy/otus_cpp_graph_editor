@@ -1,0 +1,12 @@
+<map id="inc/IView.h" name="inc/IView.h">
+<area shape="rect" id="node2" href="$EditorModel_8h.html" title="inc/EditorModel.h" alt="" coords="213,80,336,107"/>
+<area shape="rect" id="node3" href="$GraphicView_8h.html" title="inc/GraphicView.h" alt="" coords="265,229,393,256"/>
+<area shape="rect" id="node4" href="$Application_8h.html" title="inc/Application.h" alt="" coords="500,304,618,331"/>
+<area shape="rect" id="node11" href="$EditorController_8h.html" title="inc/EditorController.h" alt="" coords="257,155,401,181"/>
+<area shape="rect" id="node6" href="$Line_8h.html" title="inc/Line.h" alt="" coords="398,304,476,331"/>
+<area shape="rect" id="node8" href="$Polyline_8h.html" title="inc/Polyline.h" alt="" coords="23,304,122,331"/>
+<area shape="rect" id="node9" href="$Rectangle_8h.html" title="inc/Rectangle.h" alt="" coords="147,304,260,331"/>
+<area shape="rect" id="node10" href="$Circle_8h.html" title="inc/Circle.h" alt="" coords="285,304,373,331"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="511,379,608,405"/>
+<area shape="rect" id="node7" href="$ShapeFactory_8h.html" title="inc/ShapeFactory.h" alt="" coords="136,379,270,405"/>
+</map>

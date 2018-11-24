@@ -1,4 +1,5 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$classgraphics_1_1IImporter.html" title="Интерфейс ипортера изображения из файла. " alt="" coords="5,5,136,32"/>
-<area shape="rect" id="node2" href="$classgraphics_1_1SvgImporter.html" title="Ипортераизображения из файла в формате SVG. " alt="" coords="185,5,335,32"/>
+<area shape="rect" id="node1" href="$classgraphics_1_1FormItem.html" title="Элемент формы. " alt="" coords="6,31,141,57"/>
+<area shape="rect" id="node2" href="$classgraphics_1_1Button.html" title="Элемент формы &#45; кнопка. " alt="" coords="193,5,311,32"/>
+<area shape="rect" id="node3" href="$classgraphics_1_1Canvas.html" title="Элемент формы &#45; канва для рисования. " alt="" coords="190,56,314,83"/>
 </map>

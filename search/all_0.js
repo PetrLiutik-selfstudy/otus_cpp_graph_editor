@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['add_5fcircle',['add_circle',['../classgraphics_1_1EditorController.html#a97a23bae49ad45f3ecf58ddf154a67fd',1,'graphics::EditorController']]],
-  ['add_5fline',['add_line',['../classgraphics_1_1EditorController.html#a440a57f814448232f81f754bc6b63d95',1,'graphics::EditorController']]],
-  ['add_5fpolyline',['add_polyline',['../classgraphics_1_1EditorController.html#a9754302ec8d813b4d0987a6cc05f01b8',1,'graphics::EditorController']]],
-  ['add_5frectangle',['add_rectangle',['../classgraphics_1_1EditorController.html#a243c7323684a5eaad240e8ad86279c6c',1,'graphics::EditorController']]]
+  ['add_5fshapes',['add_shapes',['../classgraphics_1_1EditorModel.html#aea9c6175fa24845476de84b12461d46f',1,'graphics::EditorModel']]],
+  ['add_5fview',['add_view',['../classgraphics_1_1EditorModel.html#a70cfe0a6068772e239fb6f998275fdc3',1,'graphics::EditorModel']]],
+  ['application',['Application',['../classgraphics_1_1Application.html#a28da61bccc0002d688ccdd5de03fccc7',1,'graphics::Application']]],
+  ['application',['Application',['../classgraphics_1_1Application.html',1,'graphics']]],
+  ['application_2eh',['Application.h',['../Application_8h.html',1,'']]]
 ];

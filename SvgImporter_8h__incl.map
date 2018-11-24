@@ -1,6 +1,7 @@
 <map id="inc/SvgImporter.h" name="inc/SvgImporter.h">
-<area shape="rect" id="node2" href="$IImporter_8h.html" title="IImporter.h" alt="" coords="264,80,349,107"/>
-<area shape="rect" id="node3" href="$CompoundShape_8h.html" title="CompoundShape.h" alt="" coords="181,155,315,181"/>
-<area shape="rect" id="node4" href="$IShape_8h.html" title="IShape.h" alt="" coords="131,229,204,256"/>
-<area shape="rect" id="node5" href="$Coords_8h.html" title="Coords.h" alt="" coords="92,304,165,331"/>
+<area shape="rect" id="node2" href="$IImporter_8h.html" title="IImporter.h" alt="" coords="255,80,340,107"/>
+<area shape="rect" id="node3" href="$Document_8h.html" title="Document.h" alt="" coords="201,155,295,181"/>
+<area shape="rect" id="node4" href="$CompoundShape_8h.html" title="CompoundShape.h" alt="" coords="181,229,315,256"/>
+<area shape="rect" id="node5" href="$IShape_8h.html" title="IShape.h" alt="" coords="131,304,204,331"/>
+<area shape="rect" id="node6" href="$Coords_8h.html" title="Coords.h" alt="" coords="92,379,165,405"/>
 </map>

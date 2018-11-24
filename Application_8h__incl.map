@@ -1,0 +1,20 @@
+<map id="inc/Application.h" name="inc/Application.h">
+<area shape="rect" id="node2" href="$GraphicView_8h.html" title="GraphicView.h" alt="" coords="421,80,528,107"/>
+<area shape="rect" id="node11" href="$IView_8h.html" title="IView.h" alt="" coords="1325,304,1392,331"/>
+<area shape="rect" id="node25" href="$IExporter_8h.html" title="IExporter.h" alt="" coords="750,304,836,331"/>
+<area shape="rect" id="node27" href="$IImporter_8h.html" title="IImporter.h" alt="" coords="861,304,947,331"/>
+<area shape="rect" id="node3" href="$IShape_8h.html" title="IShape.h" alt="" coords="365,528,439,555"/>
+<area shape="rect" id="node10" href="$EditorModel_8h.html" title="EditorModel.h" alt="" coords="1123,229,1225,256"/>
+<area shape="rect" id="node20" href="$EditorController_8h.html" title="EditorController.h" alt="" coords="713,155,836,181"/>
+<area shape="rect" id="node22" href="$Form_8h.html" title="Form.h" alt="" coords="313,229,375,256"/>
+<area shape="rect" id="node4" href="$Coords_8h.html" title="Coords.h" alt="" coords="96,603,169,629"/>
+<area shape="rect" id="node13" href="$CompoundShape_8h.html" title="CompoundShape.h" alt="" coords="888,453,1021,480"/>
+<area shape="rect" id="node15" href="$ShapeFactory_8h.html" title="ShapeFactory.h" alt="" coords="623,379,737,405"/>
+<area shape="rect" id="node16" href="$Line_8h.html" title="Line.h" alt="" coords="401,453,457,480"/>
+<area shape="rect" id="node17" href="$Polyline_8h.html" title="Polyline.h" alt="" coords="482,453,560,480"/>
+<area shape="rect" id="node18" href="$Rectangle_8h.html" title="Rectangle.h" alt="" coords="585,453,676,480"/>
+<area shape="rect" id="node19" href="$Circle_8h.html" title="Circle.h" alt="" coords="259,453,325,480"/>
+<area shape="rect" id="node21" href="$Document_8h.html" title="Document.h" alt="" coords="779,379,872,405"/>
+<area shape="rect" id="node24" href="$SvgExporter_8h.html" title="SvgExporter.h" alt="" coords="662,229,767,256"/>
+<area shape="rect" id="node26" href="$SvgImporter_8h.html" title="SvgImporter.h" alt="" coords="792,229,896,256"/>
+</map>
